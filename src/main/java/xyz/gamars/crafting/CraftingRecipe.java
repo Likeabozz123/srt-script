@@ -1,54 +1,70 @@
 package xyz.gamars.crafting;
 
-import java.util.HashMap;
+import java.util.ArrayList;
 
 public class CraftingRecipe {
 
-    private HashMap<Character, CraftingItem> craftingItems;
-    private String top;
-    private String middle;
-    private String bottom;
+    private ArrayList<ShapelessRecipe> shapelessRecipe;
+    private ArrayList<ShapedRecipe> shapedRecipe;
+    private ArrayList<SmeltingRecipe> furnaceRecipes;
+    private ArrayList<SmeltingRecipe> blastRecipes;
+    private ArrayList<SmeltingRecipe> smokerRecipes;
+    private ArrayList<SmeltingRecipe> campfireRecipes;
 
-    public CraftingRecipe(HashMap<Character, CraftingItem> craftingItems, String top, String middle, String bottom) {
-        this.craftingItems = craftingItems;
-        this.top = top;
-        this.middle = middle;
-        this.bottom = bottom;
+    public CraftingRecipe(ArrayList<ShapelessRecipe> shapelessRecipe, ArrayList<ShapedRecipe> shapedRecipe, ArrayList<SmeltingRecipe> furnaceRecipes, ArrayList<SmeltingRecipe> blastRecipes, ArrayList<SmeltingRecipe> smokerRecipes, ArrayList<SmeltingRecipe> campfireRecipes) {
+        this.shapelessRecipe = shapelessRecipe;
+        this.shapedRecipe = shapedRecipe;
+        this.furnaceRecipes = furnaceRecipes;
+        this.blastRecipes = blastRecipes;
+        this.smokerRecipes = smokerRecipes;
+        this.campfireRecipes = campfireRecipes;
     }
 
-    public String convert() {
-        String recipe = "";
-        String convertedTop = "";
-        String convertedMiddle = "";
-        String convertedBottom = "";
-
-        for (Character character : top.toCharArray()) {
-            convertedTop += craftingItems.get(character);
-            convertedTop += "|";
-        }
-        convertedTop = convertedTop.substring(0, convertedTop.length() - 1);
-
-        for (Character character : middle.toCharArray()) {
-            convertedMiddle += craftingItems.get(character);
-            convertedMiddle += "|";
-        }
-        convertedMiddle = convertedMiddle.substring(0, convertedMiddle.length() - 1);
-
-        for (Character character : bottom.toCharArray()) {
-            convertedBottom += craftingItems.get(character);
-            convertedBottom += "|";
-        }
-        convertedBottom = convertedBottom.substring(0, convertedBottom.length() - 1);
-
-        recipe += "          - " + convertedTop + "\n";
-        recipe += "          - " + convertedMiddle + "\n";
-        recipe += "          - " + convertedBottom + "\n";
-
-        return recipe;
+    public ArrayList<ShapelessRecipe> getShapelessRecipe() {
+        return shapelessRecipe;
     }
 
-    @Override
-    public String toString() {
-        return convert();
+    public void setShapelessRecipe(ArrayList<ShapelessRecipe> shapelessRecipe) {
+        this.shapelessRecipe = shapelessRecipe;
+    }
+
+    public ArrayList<ShapedRecipe> getShapedRecipe() {
+        return shapedRecipe;
+    }
+
+    public void setShapedRecipe(ArrayList<ShapedRecipe> shapedRecipe) {
+        this.shapedRecipe = shapedRecipe;
+    }
+
+    public ArrayList<SmeltingRecipe> getFurnaceRecipes() {
+        return furnaceRecipes;
+    }
+
+    public void setFurnaceRecipes(ArrayList<SmeltingRecipe> furnaceRecipes) {
+        this.furnaceRecipes = furnaceRecipes;
+    }
+
+    public ArrayList<SmeltingRecipe> getBlastRecipes() {
+        return blastRecipes;
+    }
+
+    public void setBlastRecipes(ArrayList<SmeltingRecipe> blastRecipes) {
+        this.blastRecipes = blastRecipes;
+    }
+
+    public ArrayList<SmeltingRecipe> getSmokerRecipes() {
+        return smokerRecipes;
+    }
+
+    public void setSmokerRecipes(ArrayList<SmeltingRecipe> smokerRecipes) {
+        this.smokerRecipes = smokerRecipes;
+    }
+
+    public ArrayList<SmeltingRecipe> getCampfireRecipes() {
+        return campfireRecipes;
+    }
+
+    public void setCampfireRecipes(ArrayList<SmeltingRecipe> campfireRecipes) {
+        this.campfireRecipes = campfireRecipes;
     }
 }

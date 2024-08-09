@@ -1,6 +1,6 @@
 package xyz.gamars;
 
-import xyz.gamars.crafting.CraftingRecipe;
+import xyz.gamars.crafting.OldCraftingRecipe;
 import xyz.gamars.enums.ClickMode;
 import xyz.gamars.enums.ClickType;
 
@@ -10,7 +10,7 @@ public class AbilityStone {
     private String classAcronym;
     private int displayColor;
     private String abilityName;
-    private CraftingRecipe craftingRecipe;
+    private OldCraftingRecipe oldCraftingRecipe;
 
     private String exportText;
 
@@ -20,16 +20,16 @@ public class AbilityStone {
         this.displayColor = -1;
         this.abilityName = "";
         this.exportText = "";
-        this.craftingRecipe = new CraftingRecipe(null, "", "", "");
+        this.oldCraftingRecipe = new OldCraftingRecipe(null, "", "", "");
     }
 
-    public AbilityStone(String className, String classAcronym, int displayColor, String abilityName, CraftingRecipe craftingRecipe) {
+    public AbilityStone(String className, String classAcronym, int displayColor, String abilityName, OldCraftingRecipe oldCraftingRecipe) {
         this.className = className.toUpperCase();
         this.classAcronym = classAcronym.toUpperCase();
         this.displayColor = displayColor;
         this.abilityName = abilityName.toUpperCase();
-        this.craftingRecipe = craftingRecipe;
-        this.exportText = abilityStone(ClickType.R, ClickType.SR, ClickMode.RIGHT_CLICK) + shapedCrafting(craftingRecipe) +
+        this.oldCraftingRecipe = oldCraftingRecipe;
+        this.exportText = abilityStone(ClickType.R, ClickType.SR, ClickMode.RIGHT_CLICK) + shapedCrafting(oldCraftingRecipe) +
                 abilityStone(ClickType.SR, ClickType.SL, ClickMode.SHIFT_RIGHT_CLICK) +
                 abilityStone(ClickType.SL, ClickType.R, ClickMode.SHIFT_LEFT_CLICK);
     }
@@ -68,10 +68,10 @@ public class AbilityStone {
                 "          - v AIR - 1.0..\n";
     }
 
-    private String shapedCrafting(CraftingRecipe craftingRecipe) {
+    private String shapedCrafting(OldCraftingRecipe oldCraftingRecipe) {
         return "\t  shaped:\n" +
                 "        '1':\n" +
-                "          input:\n" + craftingRecipe;
+                "          input:\n" + oldCraftingRecipe;
     }
 
     @Override
