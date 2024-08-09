@@ -1,24 +1,24 @@
-package xyz.gamars.objects.base;
+package xyz.gamars.objects;
 
 import xyz.gamars.crafting.CraftingRecipe;
+import xyz.gamars.objects.base.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
 
 public class MMOItem {
 
     private String id;
     private String material;
-    private Integer durability;
-    private Integer customModelData;
-    private Integer maxDurability;
+    private NumericStat durability;
+    private Double customModelData;
+    private NumericStat maxDurability;
     private Boolean willBreak;
     private String name;
     private ArrayList<String> lore;
     private String loreFormat;
     private String displayedType;
-    private HashMap<String, Integer> enchants;
+    private HashMap<String, Double> enchants;
     private Boolean hideEnchants;
     private String permission;
     private ItemParticle itemParticle;
@@ -65,18 +65,18 @@ public class MMOItem {
     private Boolean unbreakable;
     private String tier;
     private String set;
-    private Double armor;
-    private Double armorToughness;
-    private Double maxHealth;
+    private NumericStat armor;
+    private NumericStat armorToughness;
+    private NumericStat maxHealth;
     private Boolean unstackable;
-    private Double maxMana;
+    private NumericStat maxMana;
     private NumericStat knockbackResistance;
-    private Double movementSpeed;
+    private NumericStat movementSpeed;
     private Boolean twoHanded;
     private Double equipPriority;
-    private ArrayList<HashMap<String, Integer>> permEffects;
+    private HashMap<String, PotionEffect> permEffects;
     private ArrayList<String> grantedPermissions;
-    private Double itemCooldown;
+    private NumericStat itemCooldown;
     private CraftingRecipe crafting;
     private String craftPermission;
     private Double craftedAmount;
@@ -86,125 +86,213 @@ public class MMOItem {
     private ArrayList<String> gemSockets;
     private String repairType;
     private HashMap<String, HashMap<String, Ability>> ability;
-    private ArrayList<String> upgrade;
-    private Double healthRegeneration;
-    private Double manaRegeneration;
-    private Double maxStamina;
-    private Double staminaRegeneration;
-    private Double additionalExperience;
+    private HashMap<String, Boolean> upgrade;
+    private NumericStat healthRegeneration;
+    private NumericStat manaRegeneration;
+    private NumericStat maxStamina;
+    private NumericStat staminaRegeneration;
+    private NumericStat additionalExperience;
     private NumericStat factionDamageEnemy;
-    private Double requiredLevel;
-    private Double requiredDexterity;
-    private Double requiredStrength;
-    private Double professionEnchanting;
-    private Double professionSmithing;
-    private Double professionMining;
+    private NumericStat requiredLevel;
+    private NumericStat requiredDexterity;
+    private NumericStat requiredStrength;
+    private NumericStat professionEnchanting;
+    private NumericStat professionSmithing;
+    private NumericStat professionMining;
+
+    // consumable fields
+    private Boolean disableRightClickConsume;
+    private NumericStat restoreHealth;
+    private NumericStat restoreFood;
+    private NumericStat restoreSaturation;
+    private NumericStat restoreMana;
+    private NumericStat restoreStamina;
+    private Boolean canIdentify;
+    private Boolean canDeconstruct;
+    private Boolean canDeskin;
+    private HashMap<String, PotionEffect> effects;
+    private NumericStat soulbindingChance;
+    private NumericStat souldboundBreakChance;
+    private NumericStat soulboundLevel;
+    private Boolean vanillaEating;
+    private Boolean inedible;
+    private Boolean maxConsume;
+    private Double repair;
+
+    // bow fields
+    private ItemParticle arrowParticles;
+    private Double arrowVelocity;
+    private PotionEffect arrowPotionEffects;
 
     public MMOItem() {
+
     }
 
-    @Override
-    public String toString() {
-        return "MMOItem{" +
-                "id='" + id + '\'' +
-                ", material='" + material + '\'' +
-                ", durability=" + durability +
-                ", customModelData=" + customModelData +
-                ", maxDurability=" + maxDurability +
-                ", willBreak=" + willBreak +
-                ", name='" + name + '\'' +
-                ", lore=" + lore +
-                ", loreFormat='" + loreFormat + '\'' +
-                ", displayedType='" + displayedType + '\'' +
-                ", enchants=" + enchants +
-                ", hideEnchants=" + hideEnchants +
-                ", permission='" + permission + '\'' +
-                ", itemParticle=" + itemParticle +
-                ", disableInteraction=" + disableInteraction +
-                ", disableCrafting=" + disableCrafting +
-                ", disableSmelting=" + disableSmelting +
-                ", disableSmithing=" + disableSmithing +
-                ", disableEnchanting=" + disableEnchanting +
-                ", disableRepairing=" + disableRepairing +
-                ", disableAttackPassive=" + disableAttackPassive +
-                ", requiredClass=" + requiredClass +
-                ", successRate=" + successRate +
-                ", attackDamage=" + attackDamage +
-                ", attackSpeed=" + attackSpeed +
-                ", criticalStrikeChance=" + criticalStrikeChance +
-                ", criticalStrikePower=" + criticalStrikePower +
-                ", blockPower=" + blockPower +
-                ", blockRating=" + blockRating +
-                ", blockCooldownReduction=" + blockCooldownReduction +
-                ", dodgeRating=" + dodgeRating +
-                ", dodgeCooldownReduction=" + dodgeCooldownReduction +
-                ", parryRating=" + parryRating +
-                ", parryCooldownReduction=" + parryCooldownReduction +
-                ", cooldownReduction=" + cooldownReduction +
-                ", manaCost=" + manaCost +
-                ", staminaCost=" + staminaCost +
-                ", pveDamage=" + pveDamage +
-                ", pvpDamage=" + pvpDamage +
-                ", weaponDamage=" + weaponDamage +
-                ", skillDamage=" + skillDamage +
-                ", projectileDamage=" + projectileDamage +
-                ", magicDamage=" + magicDamage +
-                ", physicalDamage=" + physicalDamage +
-                ", defense=" + defense +
-                ", damageReduction=" + damageReduction +
-                ", fallDamageReduction=" + fallDamageReduction +
-                ", projectileDamageReduction=" + projectileDamageReduction +
-                ", physicalDamageReduction=" + physicalDamageReduction +
-                ", fireDamageReduction=" + fireDamageReduction +
-                ", magicDamageReduction=" + magicDamageReduction +
-                ", pveDamageReduction=" + pveDamageReduction +
-                ", pvpDamageReduction=" + pvpDamageReduction +
-                ", undeadDamage=" + undeadDamage +
-                ", unbreakable=" + unbreakable +
-                ", tier='" + tier + '\'' +
-                ", set='" + set + '\'' +
-                ", armor=" + armor +
-                ", armorToughness=" + armorToughness +
-                ", maxHealth=" + maxHealth +
-                ", unstackable=" + unstackable +
-                ", maxMana=" + maxMana +
-                ", knockbackResistance=" + knockbackResistance +
-                ", movementSpeed=" + movementSpeed +
-                ", twoHanded=" + twoHanded +
-                ", equipPriority=" + equipPriority +
-                ", permEffects=" + permEffects +
-                ", grantedPermissions=" + grantedPermissions +
-                ", itemCooldown=" + itemCooldown +
-                ", crafting=" + crafting +
-                ", craftPermission='" + craftPermission + '\'' +
-                ", craftedAmount=" + craftedAmount +
-                ", sounds=" + sounds +
-                ", element=" + element +
-                ", commands=" + commands +
-                ", gemSockets=" + gemSockets +
-                ", repairType='" + repairType + '\'' +
-                ", ability=" + ability +
-                ", upgrade=" + upgrade +
-                ", healthRegeneration=" + healthRegeneration +
-                ", manaRegeneration=" + manaRegeneration +
-                ", maxStamina=" + maxStamina +
-                ", staminaRegeneration=" + staminaRegeneration +
-                ", additionalExperience=" + additionalExperience +
-                ", factionDamageEnemy=" + factionDamageEnemy +
-                ", requiredLevel=" + requiredLevel +
-                ", requiredDexterity=" + requiredDexterity +
-                ", requiredStrength=" + requiredStrength +
-                ", professionEnchanting=" + professionEnchanting +
-                ", professionSmithing=" + professionSmithing +
-                ", professionMining=" + professionMining +
-                '}';
+    public Boolean getDisableRightClickConsume() {
+        return disableRightClickConsume;
     }
 
-    public Double getRequiredLevel() {
+    public void setDisableRightClickConsume(Boolean disableRightClickConsume) {
+        this.disableRightClickConsume = disableRightClickConsume;
+    }
+
+    public NumericStat getRestoreHealth() {
+        return restoreHealth;
+    }
+
+    public void setRestoreHealth(NumericStat restoreHealth) {
+        this.restoreHealth = restoreHealth;
+    }
+
+    public NumericStat getRestoreFood() {
+        return restoreFood;
+    }
+
+    public void setRestoreFood(NumericStat restoreFood) {
+        this.restoreFood = restoreFood;
+    }
+
+    public NumericStat getRestoreSaturation() {
+        return restoreSaturation;
+    }
+
+    public void setRestoreSaturation(NumericStat restoreSaturation) {
+        this.restoreSaturation = restoreSaturation;
+    }
+
+    public NumericStat getRestoreMana() {
+        return restoreMana;
+    }
+
+    public void setRestoreMana(NumericStat restoreMana) {
+        this.restoreMana = restoreMana;
+    }
+
+    public NumericStat getRestoreStamina() {
+        return restoreStamina;
+    }
+
+    public void setRestoreStamina(NumericStat restoreStamina) {
+        this.restoreStamina = restoreStamina;
+    }
+
+    public Boolean getCanIdentify() {
+        return canIdentify;
+    }
+
+    public void setCanIdentify(Boolean canIdentify) {
+        this.canIdentify = canIdentify;
+    }
+
+    public Boolean getCanDeconstruct() {
+        return canDeconstruct;
+    }
+
+    public void setCanDeconstruct(Boolean canDeconstruct) {
+        this.canDeconstruct = canDeconstruct;
+    }
+
+    public Boolean getCanDeskin() {
+        return canDeskin;
+    }
+
+    public void setCanDeskin(Boolean canDeskin) {
+        this.canDeskin = canDeskin;
+    }
+
+    public HashMap<String, PotionEffect> getEffects() {
+        return effects;
+    }
+
+    public void setEffects(HashMap<String, PotionEffect> effects) {
+        this.effects = effects;
+    }
+
+    public NumericStat getSoulbindingChance() {
+        return soulbindingChance;
+    }
+
+    public void setSoulbindingChance(NumericStat soulbindingChance) {
+        this.soulbindingChance = soulbindingChance;
+    }
+
+    public NumericStat getSouldboundBreakChance() {
+        return souldboundBreakChance;
+    }
+
+    public void setSouldboundBreakChance(NumericStat souldboundBreakChance) {
+        this.souldboundBreakChance = souldboundBreakChance;
+    }
+
+    public NumericStat getSoulboundLevel() {
+        return soulboundLevel;
+    }
+
+    public void setSoulboundLevel(NumericStat soulboundLevel) {
+        this.soulboundLevel = soulboundLevel;
+    }
+
+    public Boolean getVanillaEating() {
+        return vanillaEating;
+    }
+
+    public void setVanillaEating(Boolean vanillaEating) {
+        this.vanillaEating = vanillaEating;
+    }
+
+    public Boolean getInedible() {
+        return inedible;
+    }
+
+    public void setInedible(Boolean inedible) {
+        this.inedible = inedible;
+    }
+
+    public Boolean getMaxConsume() {
+        return maxConsume;
+    }
+
+    public void setMaxConsume(Boolean maxConsume) {
+        this.maxConsume = maxConsume;
+    }
+
+    public Double getRepair() {
+        return repair;
+    }
+
+    public void setRepair(Double repair) {
+        this.repair = repair;
+    }
+
+    public ItemParticle getArrowParticles() {
+        return arrowParticles;
+    }
+
+    public void setArrowParticles(ItemParticle arrowParticles) {
+        this.arrowParticles = arrowParticles;
+    }
+
+    public Double getArrowVelocity() {
+        return arrowVelocity;
+    }
+
+    public void setArrowVelocity(Double arrowVelocity) {
+        this.arrowVelocity = arrowVelocity;
+    }
+
+    public PotionEffect getArrowPotionEffects() {
+        return arrowPotionEffects;
+    }
+
+    public void setArrowPotionEffects(PotionEffect arrowPotionEffects) {
+        this.arrowPotionEffects = arrowPotionEffects;
+    }
+
+    public NumericStat getRequiredLevel() {
         return requiredLevel;
     }
 
-    public void setRequiredLevel(Double requiredLevel) {
+    public void setRequiredLevel(NumericStat requiredLevel) {
         this.requiredLevel = requiredLevel;
     }
 
@@ -224,27 +312,27 @@ public class MMOItem {
         this.material = material;
     }
 
-    public Integer getDurability() {
+    public NumericStat getDurability() {
         return durability;
     }
 
-    public void setDurability(Integer durability) {
+    public void setDurability(NumericStat durability) {
         this.durability = durability;
     }
 
-    public Integer getMaxDurability() {
+    public NumericStat getMaxDurability() {
         return maxDurability;
     }
 
-    public void setMaxDurability(Integer maxDurability) {
+    public void setMaxDurability(NumericStat maxDurability) {
         this.maxDurability = maxDurability;
     }
 
-    public Integer getCustomModelData() {
+    public Double getCustomModelData() {
         return customModelData;
     }
 
-    public void setCustomModelData(Integer customModelData) {
+    public void setCustomModelData(Double customModelData) {
         this.customModelData = customModelData;
     }
 
@@ -288,11 +376,11 @@ public class MMOItem {
         this.displayedType = displayedType;
     }
 
-    public HashMap<String, Integer>  getEnchants() {
+    public HashMap<String, Double>  getEnchants() {
         return enchants;
     }
 
-    public void setEnchants(HashMap<String, Integer>  enchants) {
+    public void setEnchants(HashMap<String, Double>  enchants) {
         this.enchants = enchants;
     }
 
@@ -664,27 +752,27 @@ public class MMOItem {
         this.set = set;
     }
 
-    public Double getArmor() {
+    public NumericStat getArmor() {
         return armor;
     }
 
-    public void setArmor(Double armor) {
+    public void setArmor(NumericStat armor) {
         this.armor = armor;
     }
 
-    public Double getArmorToughness() {
+    public NumericStat getArmorToughness() {
         return armorToughness;
     }
 
-    public void setArmorToughness(Double armorToughness) {
+    public void setArmorToughness(NumericStat armorToughness) {
         this.armorToughness = armorToughness;
     }
 
-    public Double getMaxHealth() {
+    public NumericStat getMaxHealth() {
         return maxHealth;
     }
 
-    public void setMaxHealth(Double maxHealth) {
+    public void setMaxHealth(NumericStat maxHealth) {
         this.maxHealth = maxHealth;
     }
 
@@ -696,11 +784,11 @@ public class MMOItem {
         this.unstackable = unstackable;
     }
 
-    public Double getMaxMana() {
+    public NumericStat getMaxMana() {
         return maxMana;
     }
 
-    public void setMaxMana(Double maxMana) {
+    public void setMaxMana(NumericStat maxMana) {
         this.maxMana = maxMana;
     }
 
@@ -712,11 +800,11 @@ public class MMOItem {
         this.knockbackResistance = knockbackResistance;
     }
 
-    public Double getMovementSpeed() {
+    public NumericStat getMovementSpeed() {
         return movementSpeed;
     }
 
-    public void setMovementSpeed(Double movementSpeed) {
+    public void setMovementSpeed(NumericStat movementSpeed) {
         this.movementSpeed = movementSpeed;
     }
 
@@ -736,11 +824,11 @@ public class MMOItem {
         this.equipPriority = equipPriority;
     }
 
-    public ArrayList<HashMap<String, Integer>> getPermEffects() {
+    public HashMap<String, PotionEffect> getPermEffects() {
         return permEffects;
     }
 
-    public void setPermEffects(ArrayList<HashMap<String, Integer>> permEffects) {
+    public void setPermEffects(HashMap<String, PotionEffect> permEffects) {
         this.permEffects = permEffects;
     }
 
@@ -752,11 +840,11 @@ public class MMOItem {
         this.grantedPermissions = grantedPermissions;
     }
 
-    public Double getItemCooldown() {
+    public NumericStat getItemCooldown() {
         return itemCooldown;
     }
 
-    public void setItemCooldown(Double itemCooldown) {
+    public void setItemCooldown(NumericStat itemCooldown) {
         this.itemCooldown = itemCooldown;
     }
 
@@ -832,51 +920,51 @@ public class MMOItem {
         this.ability = ability;
     }
 
-    public ArrayList<String> getUpgrade() {
+    public HashMap<String, Boolean> getUpgrade() {
         return upgrade;
     }
 
-    public void setUpgrade(ArrayList<String> upgrade) {
+    public void setUpgrade(HashMap<String, Boolean> upgrade) {
         this.upgrade = upgrade;
     }
 
-    public Double getHealthRegeneration() {
+    public NumericStat getHealthRegeneration() {
         return healthRegeneration;
     }
 
-    public void setHealthRegeneration(Double healthRegeneration) {
+    public void setHealthRegeneration(NumericStat healthRegeneration) {
         this.healthRegeneration = healthRegeneration;
     }
 
-    public Double getManaRegeneration() {
+    public NumericStat getManaRegeneration() {
         return manaRegeneration;
     }
 
-    public void setManaRegeneration(Double manaRegeneration) {
+    public void setManaRegeneration(NumericStat manaRegeneration) {
         this.manaRegeneration = manaRegeneration;
     }
 
-    public Double getMaxStamina() {
+    public NumericStat getMaxStamina() {
         return maxStamina;
     }
 
-    public void setMaxStamina(Double maxStamina) {
+    public void setMaxStamina(NumericStat maxStamina) {
         this.maxStamina = maxStamina;
     }
 
-    public Double getStaminaRegeneration() {
+    public NumericStat getStaminaRegeneration() {
         return staminaRegeneration;
     }
 
-    public void setStaminaRegeneration(Double staminaRegeneration) {
+    public void setStaminaRegeneration(NumericStat staminaRegeneration) {
         this.staminaRegeneration = staminaRegeneration;
     }
 
-    public Double getAdditionalExperience() {
+    public NumericStat getAdditionalExperience() {
         return additionalExperience;
     }
 
-    public void setAdditionalExperience(Double additionalExperience) {
+    public void setAdditionalExperience(NumericStat additionalExperience) {
         this.additionalExperience = additionalExperience;
     }
 
@@ -888,43 +976,43 @@ public class MMOItem {
         this.factionDamageEnemy = factionDamageEnemy;
     }
 
-    public Double getRequiredDexterity() {
+    public NumericStat getRequiredDexterity() {
         return requiredDexterity;
     }
 
-    public void setRequiredDexterity(Double requiredDexterity) {
+    public void setRequiredDexterity(NumericStat requiredDexterity) {
         this.requiredDexterity = requiredDexterity;
     }
 
-    public Double getRequiredStrength() {
+    public NumericStat getRequiredStrength() {
         return requiredStrength;
     }
 
-    public void setRequiredStrength(Double requiredStrength) {
+    public void setRequiredStrength(NumericStat requiredStrength) {
         this.requiredStrength = requiredStrength;
     }
 
-    public Double getProfessionEnchanting() {
+    public NumericStat getProfessionEnchanting() {
         return professionEnchanting;
     }
 
-    public void setProfessionEnchanting(Double professionEnchanting) {
+    public void setProfessionEnchanting(NumericStat professionEnchanting) {
         this.professionEnchanting = professionEnchanting;
     }
 
-    public Double getProfessionSmithing() {
+    public NumericStat getProfessionSmithing() {
         return professionSmithing;
     }
 
-    public void setProfessionSmithing(Double professionSmithing) {
+    public void setProfessionSmithing(NumericStat professionSmithing) {
         this.professionSmithing = professionSmithing;
     }
 
-    public Double getProfessionMining() {
+    public NumericStat getProfessionMining() {
         return professionMining;
     }
 
-    public void setProfessionMining(Double professionMining) {
+    public void setProfessionMining(NumericStat professionMining) {
         this.professionMining = professionMining;
     }
 }

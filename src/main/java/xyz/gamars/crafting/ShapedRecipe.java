@@ -1,5 +1,8 @@
 package xyz.gamars.crafting;
 
+import xyz.gamars.enums.IDType;
+import xyz.gamars.objects.MMOItem;
+
 import java.util.ArrayList;
 
 public class ShapedRecipe {

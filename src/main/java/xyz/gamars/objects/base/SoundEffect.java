@@ -15,6 +15,10 @@ public class SoundEffect {
     public SoundEffect() {
     }
 
+    public SoundEffect(String sound) {
+        this.sound = sound;
+    }
+
     public String getSound() {
         return sound;
     }

@@ -6,6 +6,7 @@ public class ItemParticle {
     private String particle;
     private Double amount;
     private Double radius;
+    private Double offset;
     private Double speed;
     private Double rotationSpeed;
     private Double height;
@@ -18,6 +19,17 @@ public class ItemParticle {
         this.speed = speed;
         this.rotationSpeed = rotationSpeed;
         this.height = height;
+    }
+
+    public ItemParticle() {
+    }
+
+    public Double getOffset() {
+        return offset;
+    }
+
+    public void setOffset(Double offset) {
+        this.offset = offset;
     }
 
     public String getType() {

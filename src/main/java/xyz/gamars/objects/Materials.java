@@ -1,7 +1,5 @@
 package xyz.gamars.objects;
 
-import xyz.gamars.objects.base.MMOItem;
-
 import java.util.ArrayList;
 
 public class Materials {

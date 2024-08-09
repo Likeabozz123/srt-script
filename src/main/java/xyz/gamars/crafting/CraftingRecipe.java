@@ -53,6 +53,7 @@ public class CraftingRecipe {
         map.forEach((key, input) -> {
             ArrayList<CraftingItem> craftingItems = new ArrayList<>();
             input.get("input").forEach(row -> {
+                row = row.toLowerCase();
                 String firstItemString = row.substring(0, row.indexOf('|'));
                 row = row.substring(row.indexOf('|') + 1);
                 String secondItemString = row.substring(0, row.indexOf('|'));
@@ -72,6 +73,7 @@ public class CraftingRecipe {
         map.forEach((key, input) -> {
             ArrayList<CraftingItem> craftingItems = new ArrayList<>();
             input.get("input").forEach(item -> {
+                item = item.toLowerCase();
                 craftingItems.add(readItemString(item));
             });
             shapelessRecipe.add(new ShapelessRecipe(craftingItems));

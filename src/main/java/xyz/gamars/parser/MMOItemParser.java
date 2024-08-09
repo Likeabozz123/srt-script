@@ -3,12 +3,11 @@ package xyz.gamars.parser;
 import org.yaml.snakeyaml.LoaderOptions;
 import org.yaml.snakeyaml.Yaml;
 import org.yaml.snakeyaml.constructor.Constructor;
-import xyz.gamars.objects.base.MMOItem;
+import xyz.gamars.objects.MMOItem;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 
 public class MMOItemParser {
 
@@ -26,6 +25,7 @@ public class MMOItemParser {
             HashMap<String, HashMap<String, Object>> hashMap = yaml.load(new FileReader(filePath));
             hashMap.forEach((id, base) -> {
                 MMOItem item = mmoItemYaml.load(yaml.dump(base.get("base")));
+                item.setId(id);
                 items.put(id, item);
             });
 
