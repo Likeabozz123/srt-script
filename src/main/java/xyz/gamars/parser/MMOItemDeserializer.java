@@ -1,10 +1,15 @@
 package xyz.gamars.parser;
 
 import com.google.gson.*;
+import xyz.gamars.builders.CraftingRecipeBuilder;
+import xyz.gamars.builders.MMOItemBuilder;
 import xyz.gamars.crafting.*;
 import xyz.gamars.enums.IDType;
 import xyz.gamars.enums.SmeltingType;
-import xyz.gamars.objects.base.*;
+import xyz.gamars.objects.base.Command;
+import xyz.gamars.objects.base.ItemParticle;
+import xyz.gamars.objects.base.MMOItem;
+import xyz.gamars.objects.base.SoundEffect;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -249,9 +254,9 @@ public class MMOItemDeserializer implements JsonDeserializer<MMOItem> {
 
         smelting.asMap().forEach((key, jsonElement) -> {
             Map<String, JsonElement> smeltingRecipe = jsonElement.getAsJsonObject().asMap();
-            String itemString = getString(smelting, "item");
-            Integer time = getInteger(smelting, "time");
-            Double experience = getDouble(smelting, "experience");
+            String itemString = getString(smeltingRecipe, "item");
+            Integer time = getInteger(smeltingRecipe, "time");
+            Double experience = getDouble(smeltingRecipe, "experience");
 
             smeltingRecipes.add(new SmeltingRecipe(smeltingType, readItemString(itemString), time, experience));
         });
@@ -314,6 +319,7 @@ public class MMOItemDeserializer implements JsonDeserializer<MMOItem> {
     }
 
     private CraftingItem readItemString(String itemString) {
+        System.out.println(itemString);
         itemString = itemString.substring(0, itemString.indexOf('.'));
 
         if (itemString.charAt(0) == 'v') {

@@ -1,7 +1,7 @@
-package xyz.gamars.objects.base;
+package xyz.gamars.builders;
 
 import xyz.gamars.crafting.CraftingRecipe;
-import xyz.gamars.crafting.OldCraftingRecipe;
+import xyz.gamars.objects.base.*;
 
 import java.util.ArrayList;
 import java.util.Map;

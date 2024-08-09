@@ -1,4 +1,9 @@
-package xyz.gamars.crafting;
+package xyz.gamars.builders;
+
+import xyz.gamars.crafting.CraftingRecipe;
+import xyz.gamars.crafting.ShapedRecipe;
+import xyz.gamars.crafting.ShapelessRecipe;
+import xyz.gamars.crafting.SmeltingRecipe;
 
 import java.util.ArrayList;
 
