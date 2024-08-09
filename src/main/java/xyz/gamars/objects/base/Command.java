@@ -2,27 +2,18 @@ package xyz.gamars.objects.base;
 
 public class Command {
 
-    private String name;
     private String format;
     private Integer delay;
     private Boolean op;
     private Boolean console;
 
-    public Command(String name, String format, Integer delay, Boolean op, Boolean console) {
-        this.name = name;
+    public Command(String format, Integer delay, Boolean op, Boolean console) {
         this.format = format;
         this.delay = delay;
         this.op = op;
         this.console = console;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getFormat() {
         return format;

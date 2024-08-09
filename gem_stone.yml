@@ -1,0 +1,4016 @@
+RUBY:
+  base:
+    material: EMERALD
+    name: '&fRuby of Strength'
+    critical-strike-power:
+      base: 11.0
+      spread: 0.028
+      max-spread: 0.083
+    attack-damage:
+      base: 1.5
+      spread: 0.083
+      max-spread: 0.25
+    required-level: 5.0
+    disable-crafting: true
+GEM_OF_ACCURACY:
+  base:
+    material: DIAMOND
+    disable-crafting: true
+    name: '&fGem of Accuracy'
+    success-rate:
+      base: 94.5
+      spread: 0.015
+      max-spread: 0.045
+    attack-speed:
+      base: 0.075
+      spread: 0.08
+      max-spread: 0.25
+    tier: COMMON
+    critical-strike-chance:
+      base: 12.5
+      spread: 0.06
+      max-spread: 0.17
+    gem-color: Blue
+    displayed-type: Blue Gem Stone
+GEM_OF_LIFE:
+  base:
+    material: RED_DYE
+    max-health: 4.0
+    name: '&fGem of Life'
+    item-type-restriction:
+    - ARMOR
+    gem-color: Red
+    displayed-type: Red Armor Gem Stone
+    block-power: 3.0
+    disable-crafting: true
+NATURE_GIFT:
+  base:
+    material: EMERALD
+    name: '&fNature''s Gift'
+    displayed-type: Green Gem Stone
+    fire-damage-reduction:
+      base: 25.0
+      spread: 0.06
+      max-spread: 0.17
+    required-level: 6.0
+SPITEFUL_OPAQUE_DIAMOND:
+  base:
+    material: DIAMOND
+    name: '&9Spiteful Opaque Diamond'
+    success-rate:
+      base: 11.0
+      spread: 0.03
+      max-spread: 0.08
+    attack-damage:
+      base: 3.5
+      spread: 0.04
+      max-spread: 0.13
+    armor: 2.0
+    disable-crafting: true
+    gem-color: Blue
+    displayed-type: Blue Gem Stone
+GOLDEN_RELIC:
+  base:
+    material: GOLD_NUGGET
+    name: '&eGolden Relic'
+    lore:
+    - '&7Apply it onto &eany&7 socket.'
+    - '&7'
+    critical-strike-chance:
+      base: 15.0
+      spread: 0.08
+      max-spread: 0.25
+    required-level: 20.0
+    disable-crafting: true
+BLAZE_SOUL:
+  base:
+    material: ORANGE_DYE
+    disable-crafting: true
+    name: '&cBlaze Soul'
+    required-level: 15.0
+    displayed-type: Red Gem Stone
+    hide-enchants: true
+    enchants:
+      unbreaking: 1
+    fire-damage-reduction:
+      base: 55.0
+      spread: 0.03
+      max-spread: 0.08
+    success-rate:
+      base: 70.0
+      spread: 0.042
+      max-spread: 0.13
+NETHER_GEM:
+  base:
+    material: NETHERITE_SCRAP
+    name: §cNether Gem
+    lore:
+    - §c§oThe nether gem can be placed on
+    - §c§oitems containing nether sockets.
+    success-rate:
+      base: 60.0
+      scale: 0.12
+      spread: 0.25
+    gem-color: Nether
+    attack-damage:
+      base: 6.0
+      scale: 0.05
+      spread: 0.06
+      max-spread: 0.12
+    weapon-damage:
+      base: 14.0
+      scale: 0.1
+      spread: 0.09
+      max-spread: 0.15
+    critical-strike-chance:
+      base: 4.0
+      scale: 0.1
+      spread: 0.09
+      max-spread: 0.15
+    critical-strike-power:
+      base: 25.0
+      scale: 0.1
+      spread: 0.09
+      max-spread: 0.15
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|v netherite_ingot - 1.0..|v AIR 0 1..
+          - v netherite_ingot - 1.0..|v magma_cream - 1.0..|v netherite_ingot - 1.0..
+          - v AIR 0 1..|v netherite_ingot - 1.0..|v AIR 0 1..
+    tier: RARE
+RAINBOW_GEM:
+  base:
+    material: AMETHYST_SHARD
+    name: §c§lR§6§la§e§li§a§ln§2§lb§9§lo§3§lw §c§lG§6§le§e§lm
+    lore:
+    - §eThe rainbow gem allows you to
+    - §eboost a large amount of stats!
+    - §2It will also upgrade your item
+    - §2depending on its previous upgrades!
+    - §cVery hard to craft!
+    attack-damage: 2.0
+    attack-speed: 0.1
+    critical-strike-chance: 10.0
+    critical-strike-power: 15.0
+    block-power: 2.0
+    block-rating: 2.0
+    block-cooldown-reduction: 2.5
+    cooldown-reduction: 5.0
+    weapon-damage: 5.0
+    magic-damage: 2.5
+    tier: LEGENDARY
+    unstackable: true
+    gem-color: Rainbow
+    gem-upgrade-scaling: HISTORIC
+    max-health: 5.0
+    max-mana: 5.0
+    crafting:
+      megashaped:
+        '1':
+          input:
+          - v netherite_sword - 1.0..|v netherite_helmet - 1.0..|v netherite_chestplate
+            - 1.0..|v netherite_leggings - 1.0..|v netherite_boots - 1.0..|v golden_sword
+            - 1.0..
+          - v diamond_helmet - 1.0..|v wither_skeleton_skull - 1.0..|v gold_ingot
+            - 1.0..|v gold_ingot - 1.0..|v nether_star - 1.0..|v golden_helmet - 1.0..
+          - v diamond_chestplate - 1.0..|v iron_ingot - 1.0..|v diamond_block - 1.0..|v
+            diamond_block - 1.0..|v amethyst_shard - 1.0..|v golden_chestplate - 1.0..
+          - v diamond_leggings - 1.0..|v iron_ingot - 1.0..|v diamond_block - 1.0..|v
+            diamond_block - 1.0..|v amethyst_shard - 1.0..|v golden_leggings - 1.0..
+          - v diamond_boots - 1.0..|v netherite_block - 1.0..|v copper_ingot - 1.0..|v
+            copper_ingot - 1.0..|v heart_of_the_sea - 1.0..|v golden_boots - 1.0..
+          - v iron_sword - 1.0..|v iron_helmet - 1.0..|v iron_chestplate - 1.0..|v
+            iron_leggings - 1.0..|v iron_boots - 1.0..|v diamond_sword - 1.0..
+    success-rate: 90.0
+# SWORDMAN!#
+SRT_SWORDSMANRISING_WINDS_R:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Rising Winds
+    gem-color: Swordsman R
+    ability:
+      ability1:
+        type: RISING_WINDS
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANRISING_WINDS_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+      shaped:
+        '1':
+          input:
+          - m material fluffy_cloud 1.0..|m material lightweight_blade 1.0..|m material
+            fluffy_cloud 1.0..
+          - m material moonstone_shard 1.0..|m material spirit_of_sword 1.0..|m material
+            moonstone_shard 1.0..
+          - v feather - 1.0..|m material wind_essence 1.0..|v feather - 1.0..
+SRT_SWORDSMANRISING_WINDS_SR:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Rising Winds
+    gem-color: Swordsman SR
+    ability:
+      ability1:
+        type: RISING_WINDS
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANRISING_WINDS_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_SWORDSMANRISING_WINDS_SL:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Rising Winds
+    gem-color: Swordsman SL
+    ability:
+      ability1:
+        type: RISING_WINDS
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANRISING_WINDS_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_SWORDSMANCHARGING_BREEZE_R:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Charging Breeze
+    gem-color: Swordsman R
+    ability:
+      ability1:
+        type: CHARGING_BREEZE
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANCHARGING_BREEZE_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+      shaped:
+        '1':
+          input:
+          - m material fluffy_cloud 1.0..|m material wind_essence 1.0..|m material
+            windswept_dust 1.0..
+          - m material moonstone_shard 1.0..|m material spirit_of_sword 1.0..|m material
+            moonstone_shard 1.0..
+          - m material windswept_dust 1.0..|m material lightweight_blade 1.0..|m material
+            fluffy_cloud 1.0..
+SRT_SWORDSMANCHARGING_BREEZE_SR:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Charging Breeze
+    gem-color: Swordsman SR
+    ability:
+      ability1:
+        type: CHARGING_BREEZE
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANCHARGING_BREEZE_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_SWORDSMANCHARGING_BREEZE_SL:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Charging Breeze
+    gem-color: Swordsman SL
+    ability:
+      ability1:
+        type: CHARGING_BREEZE
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANCHARGING_BREEZE_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+
+
+SRT_SWORDSMANSHARP_WINDS_R:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Sharp Winds
+    gem-color: Swordsman R
+    ability:
+      ability1:
+        type: SHARP_WINDS
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANSHARP_WINDS_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+      shaped:
+        '1':
+          input:
+          - v iron_sword - 1.0..|m material floating_pebbles 1.0..|v iron_sword -
+            1.0..
+          - m material moonstone_shard 1.0..|m material spirit_of_sword 1.0..|m material
+            moonstone_shard 1.0..
+          - m material windswept_dust 1.0..|m material lightweight_blade 1.0..|m material
+            windswept_dust 1.0..
+SRT_SWORDSMANSHARP_WINDS_SR:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Sharp Winds
+    gem-color: Swordsman SR
+    ability:
+      ability1:
+        type: SHARP_WINDS
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANSHARP_WINDS_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_SWORDSMANSHARP_WINDS_SL:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Sharp Winds
+    gem-color: Swordsman SL
+    ability:
+      ability1:
+        type: SHARP_WINDS
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANSHARP_WINDS_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_SWORDSMANWIND_DASH_R:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Wind Dash
+    gem-color: Swordsman R
+    ability:
+      ability1:
+        type: WIND_DASH
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANWIND_DASH_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+      shaped:
+        '1':
+          input:
+          - m material dragonfly_wing 1.0..|m material wind_essence 1.0..|m material
+            dragonfly_wing 1.0..
+          - m material moonstone_shard 1.0..|m material spirit_of_sword 1.0..|m material
+            moonstone_shard 1.0..
+          - m material springy_leg 1.0..|m material wind_essence 1.0..|m material
+            springy_leg 1.0..
+SRT_SWORDSMANWIND_DASH_SR:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Wind Dash
+    gem-color: Swordsman SR
+    ability:
+      ability1:
+        type: WIND_DASH
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANWIND_DASH_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_SWORDSMANWIND_DASH_SL:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Wind Dash
+    gem-color: Swordsman SL
+    ability:
+      ability1:
+        type: WIND_DASH
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANWIND_DASH_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+
+SRT_SWORDSMANICICLE_SMASH_R:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Icicle Smash
+    gem-color: Swordsman R
+    ability:
+      ability1:
+        type: ICICLE_SMASH
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANICICLE_SMASH_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_SWORDSMANICICLE_SMASH_SR:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Icicle Smash
+    gem-color: Swordsman SR
+    ability:
+      ability1:
+        type: ICICLE_SMASH
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANICICLE_SMASH_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_SWORDSMANICICLE_SMASH_SL:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Icicle Smash
+    gem-color: Swordsman SL
+    ability:
+      ability1:
+        type: ICICLE_SMASH
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANICICLE_SMASH_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_SWORDSMANFURY_SLASHES_R:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Fury Slashes
+    gem-color: Swordsman R
+    ability:
+      ability1:
+        type: FURY_SLASHES
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANFURY_SLASHES_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_SWORDSMANFURY_SLASHES_SR:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Fury Slashes
+    gem-color: Swordsman SR
+    ability:
+      ability1:
+        type: FURY_SLASHES
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANFURY_SLASHES_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_SWORDSMANFURY_SLASHES_SL:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Fury Slashes
+    gem-color: Swordsman SL
+    ability:
+      ability1:
+        type: FURY_SLASHES
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANFURY_SLASHES_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_SWORDSMANDEFLECTION_R:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Deflection
+    gem-color: Swordsman R
+    ability:
+      ability1:
+        type: DEFLECTION
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANDEFLECTION_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_SWORDSMANDEFLECTION_SR:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Deflection
+    gem-color: Swordsman SR
+    ability:
+      ability1:
+        type: DEFLECTION
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANDEFLECTION_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_SWORDSMANDEFLECTION_SL:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Deflection
+    gem-color: Swordsman SL
+    ability:
+      ability1:
+        type: DEFLECTION
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANDEFLECTION_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_SWORDSMANGLACIAL_STORM_R:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Glacial Storm
+    gem-color: Swordsman R
+    ability:
+      ability1:
+        type: GLACIAL_STORM
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANGLACIAL_STORM_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_SWORDSMANGLACIAL_STORM_SR:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Glacial Storm
+    gem-color: Swordsman SR
+    ability:
+      ability1:
+        type: GLACIAL_STORM
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANGLACIAL_STORM_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_SWORDSMANGLACIAL_STORM_SL:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Glacial Storm
+    gem-color: Swordsman SL
+    ability:
+      ability1:
+        type: GLACIAL_STORM
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANGLACIAL_STORM_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_SWORDSMANFREEZING_GUST_R:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Freezing Gust
+    gem-color: Swordsman R
+    ability:
+      ability1:
+        type: FREEZING_GUST
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANFREEZING_GUST_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_SWORDSMANFREEZING_GUST_SR:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Freezing Gust
+    gem-color: Swordsman SR
+    ability:
+      ability1:
+        type: FREEZING_GUST
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANFREEZING_GUST_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_SWORDSMANFREEZING_GUST_SL:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Freezing Gust
+    gem-color: Swordsman SL
+    ability:
+      ability1:
+        type: FREEZING_GUST
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANFREEZING_GUST_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_SWORDSMANICE_DASH_R:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Ice Dash
+    gem-color: Swordsman R
+    ability:
+      ability1:
+        type: ICE_DASH
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANICE_DASH_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_SWORDSMANICE_DASH_SR:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Ice Dash
+    gem-color: Swordsman SR
+    ability:
+      ability1:
+        type: ICE_DASH
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANICE_DASH_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_SWORDSMANICE_DASH_SL:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Ice Dash
+    gem-color: Swordsman SL
+    ability:
+      ability1:
+        type: ICE_DASH
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_SWORDSMANICE_DASH_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+# Rogue#
+SRT_ROGUEDOWNDRAFT_R:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Downdraft
+    gem-color: Rogue R
+    ability:
+      ability1:
+        type: DOWNDRAFT
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUEDOWNDRAFT_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+      shaped:
+        '1':
+          input:
+          - m material dragonfly_wing 1.0..|m material wind_essence 1.0..|m material
+            dragonfly_wing 1.0..
+          - m material moonstone_shard 1.0..|m material spirit_of_cunning 1.0..|m
+            material moonstone_shard 1.0..
+          - m material fluffy_cloud 1.0..|m material floating_pebbles 1.0..|m material
+            fluffy_cloud 1.0..
+SRT_ROGUEDOWNDRAFT_SR:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Downdraft
+    gem-color: Rogue SR
+    ability:
+      ability1:
+        type: DOWNDRAFT
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUEDOWNDRAFT_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ROGUEDOWNDRAFT_SL:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Downdraft
+    gem-color: Rogue SL
+    ability:
+      ability1:
+        type: DOWNDRAFT
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUEDOWNDRAFT_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+
+SRT_ROGUEAIR_CURRENT_R:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Air Current
+    gem-color: Rogue R
+    ability:
+      ability1:
+        type: AIR_CURRENT
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUEAIR_CURRENT_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+      shaped:
+        '1':
+          input:
+          - m material springy_leg 1.0..|m material wind_essence 1.0..|m material
+            springy_leg 1.0..
+          - m material moonstone_shard 1.0..|m material spirit_of_cunning 1.0..|m
+            material moonstone_shard 1.0..
+          - m material windswept_dust 1.0..|m material wind_essence 1.0..|m material
+            windswept_dust 1.0..
+SRT_ROGUEAIR_CURRENT_SR:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Air Current
+    gem-color: Rogue SR
+    ability:
+      ability1:
+        type: AIR_CURRENT
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUEAIR_CURRENT_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ROGUEAIR_CURRENT_SL:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Air Current
+    gem-color: Rogue SL
+    ability:
+      ability1:
+        type: AIR_CURRENT
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUEAIR_CURRENT_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ROGUEBILLOWING_SMOKE_R:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Billowing Smoke
+    gem-color: Rogue R
+    ability:
+      ability1:
+        type: BILLOWING_SMOKE
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUEBILLOWING_SMOKE_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+      shaped:
+        '1':
+          input:
+          - m material fluffy_cloud 1.0..|m material wind_essence 1.0..|m material
+            fluffy_cloud 1.0..
+          - m material moonstone_shard 1.0..|m material spirit_of_cunning 1.0..|m
+            material moonstone_shard 1.0..
+          - m material fluffy_cloud 1.0..|m material wind_essence 1.0..|m material
+            fluffy_cloud 1.0..
+SRT_ROGUEBILLOWING_SMOKE_SR:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Billowing Smoke
+    gem-color: Rogue SR
+    ability:
+      ability1:
+        type: BILLOWING_SMOKE
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUEBILLOWING_SMOKE_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ROGUEBILLOWING_SMOKE_SL:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Billowing Smoke
+    gem-color: Rogue SL
+    ability:
+      ability1:
+        type: BILLOWING_SMOKE
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUEBILLOWING_SMOKE_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+
+SRT_ROGUEWIND_KUNAI_R:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Wind Kunai
+    gem-color: Rogue R
+    ability:
+      ability1:
+        type: WIND_KUNAI
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUEWIND_KUNAI_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+      shaped:
+        '1':
+          input:
+          - v iron_sword - 1.0..|m material lightweight_blade 1.0..|v iron_sword -
+            1.0..
+          - m material moonstone_shard 1.0..|m material spirit_of_cunning 1.0..|m
+            material moonstone_shard 1.0..
+          - v iron_sword - 1.0..|m material lightweight_blade 1.0..|v iron_sword -
+            1.0..
+SRT_ROGUEWIND_KUNAI_SR:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Wind Kunai
+    gem-color: Rogue SR
+    ability:
+      ability1:
+        type: WIND_KUNAI
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUEWIND_KUNAI_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ROGUEWIND_KUNAI_SL:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Wind Kunai
+    gem-color: Rogue SL
+    ability:
+      ability1:
+        type: WIND_KUNAI
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUEWIND_KUNAI_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ROGUEUPDRAFT_R:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Updraft
+    gem-color: Rogue R
+    ability:
+      ability1:
+        type: UPDRAFT
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUEUPDRAFT_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ROGUEUPDRAFT_SR:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Updraft
+    gem-color: Rogue SR
+    ability:
+      ability1:
+        type: UPDRAFT
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUEUPDRAFT_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ROGUEUPDRAFT_SL:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Updraft
+    gem-color: Rogue SL
+    ability:
+      ability1:
+        type: UPDRAFT
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUEUPDRAFT_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ROGUESHOCK_LEAP_R:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Shock Leap
+    gem-color: Rogue R
+    ability:
+      ability1:
+        type: SHOCK_LEAP
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUESHOCK_LEAP_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ROGUESHOCK_LEAP_SR:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Shock Leap
+    gem-color: Rogue SR
+    ability:
+      ability1:
+        type: SHOCK_LEAP
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUESHOCK_LEAP_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ROGUESHOCK_LEAP_SL:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Shock Leap
+    gem-color: Rogue SL
+    ability:
+      ability1:
+        type: SHOCK_LEAP
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUESHOCK_LEAP_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ROGUEELECTRIC_SMOKE_R:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Electric Smoke
+    gem-color: Rogue R
+    ability:
+      ability1:
+        type: ELECTRIC_SMOKE
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUEELECTRIC_SMOKE_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ROGUEELECTRIC_SMOKE_SR:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Electric Smoke
+    gem-color: Rogue SR
+    ability:
+      ability1:
+        type: ELECTRIC_SMOKE
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUEELECTRIC_SMOKE_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ROGUEELECTRIC_SMOKE_SL:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Electric Smoke
+    gem-color: Rogue SL
+    ability:
+      ability1:
+        type: ELECTRIC_SMOKE
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUEELECTRIC_SMOKE_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ROGUEBATTALION_BANNER_R:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Battalion Banner
+    gem-color: Rogue R
+    ability:
+      ability1:
+        type: BATTALION_BANNER
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUEBATTALION_BANNER_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ROGUEBATTALION_BANNER_SR:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Battalion Banner
+    gem-color: Rogue SR
+    ability:
+      ability1:
+        type: BATTALION_BANNER
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUEBATTALION_BANNER_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ROGUEBATTALION_BANNER_SL:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Battalion Banner
+    gem-color: Rogue SL
+    ability:
+      ability1:
+        type: BATTALION_BANNER
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUEBATTALION_BANNER_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+
+SRT_ROGUESWIFT_RETREAT_R:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Swift Retreat
+    gem-color: Rogue R
+    ability:
+      ability1:
+        type: SWIFT_RETREAT
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUESWIFT_RETREAT_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ROGUESWIFT_RETREAT_SR:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Swift Retreat
+    gem-color: Rogue SR
+    ability:
+      ability1:
+        type: SWIFT_RETREAT
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUESWIFT_RETREAT_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ROGUESWIFT_RETREAT_SL:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Swift Retreat
+    gem-color: Rogue SL
+    ability:
+      ability1:
+        type: SWIFT_RETREAT
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUESWIFT_RETREAT_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_RECURSIVE RAYRECURSIVE_RAY_R:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Recursive Ray
+    gem-color: Recursive Ray R
+    ability:
+      ability1:
+        type: RECURSIVE_RAY
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_RECURSIVE RAYRECURSIVE_RAY_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_RECURSIVE RAYRECURSIVE_RAY_SR:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Recursive Ray
+    gem-color: Recursive Ray SR
+    ability:
+      ability1:
+        type: RECURSIVE_RAY
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_RECURSIVE RAYRECURSIVE_RAY_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_RECURSIVE RAYRECURSIVE_RAY_SL:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Recursive Ray
+    gem-color: Recursive Ray SL
+    ability:
+      ability1:
+        type: RECURSIVE_RAY
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_RECURSIVE RAYRECURSIVE_RAY_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+# gojo#
+SRT_GOJOWHIRLPOOL_R:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Whirlpool
+    gem-color: Gojo R
+    ability:
+      ability1:
+        type: WHIRLPOOL
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOWHIRLPOOL_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+      shaped:
+        '1':
+          input:
+          - v pufferfish - 1.0..|m material cone_of_the_sea 1.0..|v fishing_rod -
+            1.0..
+          - m material aquamarine_shard 1.0..|m material spirit_of_strongest 1.0..|m
+            material aquamarine_shard 1.0..
+          - m material shark_fin 1.0..|m material sea_puppet 1.0..|v pufferfish -
+            1.0..
+SRT_GOJOWHIRLPOOL_SR:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Whirlpool
+    gem-color: Gojo SR
+    ability:
+      ability1:
+        type: WHIRLPOOL
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOWHIRLPOOL_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_GOJOWHIRLPOOL_SL:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Whirlpool
+    gem-color: Gojo SL
+    ability:
+      ability1:
+        type: WHIRLPOOL
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOWHIRLPOOL_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_GOJOREVERSE_CURSE_TECHNIQUE_R:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Reverse Curse Technique
+    gem-color: Gojo R
+    ability:
+      ability1:
+        type: REVERSE_CURSE_TECHNIQUE
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOREVERSE_CURSE_TECHNIQUE_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+      shaped:
+        '1':
+          input:
+          - v prismarine_crystals - 1.0..|m material cone_of_the_sea 1.0..|m consumable
+            small_health_jam 1.0..
+          - m material aquamarine_shard 1.0..|m material spirit_of_strongest 1.0..|m
+            material aquamarine_shard 1.0..
+          - m consumable small_health_jam 1.0..|m material cone_of_the_sea 1.0..|v
+            prismarine_crystals - 1.0..
+SRT_GOJOREVERSE_CURSE_TECHNIQUE_SR:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Reverse Curse Technique
+    gem-color: Gojo SR
+    ability:
+      ability1:
+        type: REVERSE_CURSE_TECHNIQUE
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOREVERSE_CURSE_TECHNIQUE_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_GOJOREVERSE_CURSE_TECHNIQUE_SL:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Reverse Curse Technique
+    gem-color: Gojo SL
+    ability:
+      ability1:
+        type: REVERSE_CURSE_TECHNIQUE
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOREVERSE_CURSE_TECHNIQUE_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_GOJODREDGE_LINE_R:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Dredge Line
+    gem-color: Gojo R
+    ability:
+      ability1:
+        type: DREDGE_LINE
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJODREDGE_LINE_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+      shaped:
+        '1':
+          input:
+          - v slime_block - 1.0..|m material twirly_tentashell 1.0..|v slime_block
+            - 1.0..
+          - m material aquamarine_shard 1.0..|m material spirit_of_strongest 1.0..|m
+            material aquamarine_shard 1.0..
+          - v iron_ingot - 1.0..|m material sea_puppet 1.0..|v iron_ingot - 1.0..
+SRT_GOJODREDGE_LINE_SR:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Dredge Line
+    gem-color: Gojo SR
+    ability:
+      ability1:
+        type: DREDGE_LINE
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJODREDGE_LINE_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_GOJODREDGE_LINE_SL:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Dredge Line
+    gem-color: Gojo SL
+    ability:
+      ability1:
+        type: DREDGE_LINE
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJODREDGE_LINE_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_GOJOOVERCLOCK_R:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Overclock
+    gem-color: Gojo R
+    ability:
+      ability1:
+        type: OVERCLOCK
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOOVERCLOCK_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+      shaped:
+        '1':
+          input:
+          - v sea_pickle - 1.0..|m material twirly_tentashell 1.0..|v heart_of_the_sea
+            - 1.0..
+          - m material aquamarine_shard 1.0..|m material spirit_of_strongest 1.0..|m
+            material aquamarine_shard 1.0..
+          - v heart_of_the_sea - 1.0..|m material cone_of_the_sea 1.0..|v sea_pickle
+            - 1.0..
+SRT_GOJOOVERCLOCK_SR:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Overclock
+    gem-color: Gojo SR
+    ability:
+      ability1:
+        type: OVERCLOCK
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOOVERCLOCK_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_GOJOOVERCLOCK_SL:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Overclock
+    gem-color: Gojo SL
+    ability:
+      ability1:
+        type: OVERCLOCK
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOOVERCLOCK_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_GOJOMURASAKI_R:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Murasaki
+    gem-color: Gojo R
+    ability:
+      ability1:
+        type: MURASAKI
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOMURASAKI_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_GOJOMURASAKI_SR:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Murasaki
+    gem-color: Gojo SR
+    ability:
+      ability1:
+        type: MURASAKI
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOMURASAKI_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_GOJOMURASAKI_SL:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Murasaki
+    gem-color: Gojo SL
+    ability:
+      ability1:
+        type: MURASAKI
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOMURASAKI_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_GOJOAO_R:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Ao
+    gem-color: Gojo R
+    ability:
+      ability1:
+        type: AO
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOAO_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_GOJOAO_SR:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Ao
+    gem-color: Gojo SR
+    ability:
+      ability1:
+        type: AO
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOAO_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_GOJOAO_SL:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Ao
+    gem-color: Gojo SL
+    ability:
+      ability1:
+        type: AO
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOAO_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_GOJOMURYOUKUUSHO_R:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Muryoukuusho
+    gem-color: Gojo R
+    ability:
+      ability1:
+        type: MURYOUKUUSHO
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOMURYOUKUUSHO_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_GOJOMURYOUKUUSHO_SR:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Muryoukuusho
+    gem-color: Gojo SR
+    ability:
+      ability1:
+        type: MURYOUKUUSHO
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOMURYOUKUUSHO_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_GOJOMURYOUKUUSHO_SL:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Muryoukuusho
+    gem-color: Gojo SL
+    ability:
+      ability1:
+        type: MURYOUKUUSHO
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOMURYOUKUUSHO_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_GOJOMAXIMUM_ENERGY_OUTPUT_R:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Maximum Energy Output
+    gem-color: Gojo R
+    ability:
+      ability1:
+        type: MAXIMUM_ENERGY_OUTPUT
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOMAXIMUM_ENERGY_OUTPUT_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_GOJOMAXIMUM_ENERGY_OUTPUT_SR:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Maximum Energy Output
+    gem-color: Gojo SR
+    ability:
+      ability1:
+        type: MAXIMUM_ENERGY_OUTPUT
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOMAXIMUM_ENERGY_OUTPUT_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_GOJOMAXIMUM_ENERGY_OUTPUT_SL:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Maximum Energy Output
+    gem-color: Gojo SL
+    ability:
+      ability1:
+        type: MAXIMUM_ENERGY_OUTPUT
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOMAXIMUM_ENERGY_OUTPUT_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_GOJOOVER_OVERCLOCK_R:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Over Overclock
+    gem-color: Gojo R
+    ability:
+      ability1:
+        type: OVER_OVERCLOCK
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOOVER_OVERCLOCK_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_GOJOOVER_OVERCLOCK_SR:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Over Overclock
+    gem-color: Gojo SR
+    ability:
+      ability1:
+        type: OVER_OVERCLOCK
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOOVER_OVERCLOCK_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_GOJOOVER_OVERCLOCK_SL:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Over Overclock
+    gem-color: Gojo SL
+    ability:
+      ability1:
+        type: OVER_OVERCLOCK
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOOVER_OVERCLOCK_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_GOJOGOJO_BOOST_R:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Gojo Boost
+    gem-color: Gojo R
+    ability:
+      ability1:
+        type: GOJO_BOOST
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOGOJO_BOOST_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_GOJOGOJO_BOOST_SR:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Gojo Boost
+    gem-color: Gojo SR
+    ability:
+      ability1:
+        type: GOJO_BOOST
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOGOJO_BOOST_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_GOJOGOJO_BOOST_SL:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Gojo Boost
+    gem-color: Gojo SL
+    ability:
+      ability1:
+        type: GOJO_BOOST
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOGOJO_BOOST_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+# jomuel#
+SRT_PALETTEERRUNNING_RAINBOW_R:
+  base:
+    material: IRON_INGOT
+    name: §a[ARTISTRY] Running Rainbow
+    gem-color: Paletteer R
+    ability:
+      ability1:
+        type: RUNNING_RAINBOW
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_PALETTEERRUNNING_RAINBOW_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+      shaped:
+        '1':
+          input:
+          - v fire_coral_block - 1.0..|m material sea_puppet 1.0..|v sweet_berries
+            - 1.0..
+          - m material aquamarine_shard 1.0..|m material spirit_of_artistry 1.0..|m
+            material aquamarine_shard 1.0..
+          - v fire_coral_block - 1.0..|m material twirly_tentashell 1.0..|v sweet_berries
+            - 1.0..
+SRT_PALETTEERRUNNING_RAINBOW_SR:
+  base:
+    material: IRON_INGOT
+    name: §a[ARTISTRY] Running Rainbow
+    gem-color: Paletteer SR
+    ability:
+      ability1:
+        type: RUNNING_RAINBOW
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_PALETTEERRUNNING_RAINBOW_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_PALETTEERRUNNING_RAINBOW_SL:
+  base:
+    material: IRON_INGOT
+    name: §a[ARTISTRY] Running Rainbow
+    gem-color: Paletteer SL
+    ability:
+      ability1:
+        type: RUNNING_RAINBOW
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_PALETTEERRUNNING_RAINBOW_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_PALETTEERWHIRLING_HUES_R:
+  base:
+    material: IRON_INGOT
+    name: §a[ARTISTRY] Whirling Hues
+    gem-color: Paletteer R
+    ability:
+      ability1:
+        type: WHIRLING_HUES
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_PALETTEERWHIRLING_HUES_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+      shaped:
+        '1':
+          input:
+          - v sponge - 1.0..|m material twirly_tentashell 1.0..|v horn_coral_block
+            - 1.0..
+          - m material aquamarine_shard 1.0..|m material spirit_of_artistry 1.0..|m
+            material aquamarine_shard 1.0..
+          - v horn_coral_block - 1.0..|m material twirly_tentashell 1.0..|v sponge
+            - 1.0..
+SRT_PALETTEERWHIRLING_HUES_SR:
+  base:
+    material: IRON_INGOT
+    name: §a[ARTISTRY] Whirling Hues
+    gem-color: Paletteer SR
+    ability:
+      ability1:
+        type: WHIRLING_HUES
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_PALETTEERWHIRLING_HUES_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_PALETTEERWHIRLING_HUES_SL:
+  base:
+    material: IRON_INGOT
+    name: §a[ARTISTRY] Whirling Hues
+    gem-color: Paletteer SL
+    ability:
+      ability1:
+        type: WHIRLING_HUES
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_PALETTEERWHIRLING_HUES_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_PALETTEERSERENE_SPLASH_R:
+  base:
+    material: IRON_INGOT
+    name: §a[ARTISTRY] Serene Splash
+    gem-color: Paletteer R
+    ability:
+      ability1:
+        type: SERENE_SPLASH
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_PALETTEERSERENE_SPLASH_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+      shaped:
+        '1':
+          input:
+          - v tube_coral_block - 1.0..|m material cone_of_the_sea 1.0..|v peony -
+            1.0..
+          - m material aquamarine_shard 1.0..|m material spirit_of_artistry 1.0..|m
+            material aquamarine_shard 1.0..
+          - v peony - 1.0..|m material sea_puppet 1.0..|v tube_coral_block - 1.0..
+SRT_PALETTEERSERENE_SPLASH_SR:
+  base:
+    material: IRON_INGOT
+    name: §a[ARTISTRY] Serene Splash
+    gem-color: Paletteer SR
+    ability:
+      ability1:
+        type: SERENE_SPLASH
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_PALETTEERSERENE_SPLASH_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_PALETTEERSERENE_SPLASH_SL:
+  base:
+    material: IRON_INGOT
+    name: §a[ARTISTRY] Serene Splash
+    gem-color: Paletteer SL
+    ability:
+      ability1:
+        type: SERENE_SPLASH
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_PALETTEERSERENE_SPLASH_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+
+SRT_PALETTEERAQUATIC_SURGE_R:
+  base:
+    material: IRON_INGOT
+    name: §a[ARTISTRY] Aquatic Surge
+    gem-color: Paletteer R
+    ability:
+      ability1:
+        type: AQUATIC_SURGE
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_PALETTEERAQUATIC_SURGE_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+      shaped:
+        '1':
+          input:
+          - v sea_lantern - 1.0..|m material cone_of_the_sea 1.0..|v dark_prismarine
+            - 1.0..
+          - m material aquamarine_shard 1.0..|m material spirit_of_artistry 1.0..|m
+            material aquamarine_shard 1.0..
+          - v tube_coral_block - 1.0..|m material cone_of_the_sea 1.0..|v sea_pickle
+            - 1.0..
+SRT_PALETTEERAQUATIC_SURGE_SR:
+  base:
+    material: IRON_INGOT
+    name: §a[ARTISTRY] Aquatic Surge
+    gem-color: Paletteer SR
+    ability:
+      ability1:
+        type: AQUATIC_SURGE
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_PALETTEERAQUATIC_SURGE_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_PALETTEERAQUATIC_SURGE_SL:
+  base:
+    material: IRON_INGOT
+    name: §a[ARTISTRY] Aquatic Surge
+    gem-color: Paletteer SL
+    ability:
+      ability1:
+        type: AQUATIC_SURGE
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_PALETTEERAQUATIC_SURGE_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+# artificer#
+SRT_ARTIFICERSCRAP_SHOT_R:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Scrap Shot
+    gem-color: Artificer R
+    ability:
+      ability1:
+        type: SCRAP_SHOT
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERSCRAP_SHOT_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+      shaped:
+        '1':
+          input:
+          - v bone_meal - 1.0..|m material razor_sharp_leaf 1.0..|v tnt - 1.0..
+          - m material peridot_shard 1.0..|m material spirit_of_ingenuity 1.0..|m
+            material peridot_shard 1.0..
+          - v tnt - 1.0..|m material razor_sharp_leaf 1.0..|v bone_meal - 1.0..
+SRT_ARTIFICERSCRAP_SHOT_SR:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Scrap Shot
+    gem-color: Artificer SR
+    ability:
+      ability1:
+        type: SCRAP_SHOT
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERSCRAP_SHOT_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ARTIFICERSCRAP_SHOT_SL:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Scrap Shot
+    gem-color: Artificer SL
+    ability:
+      ability1:
+        type: SCRAP_SHOT
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERSCRAP_SHOT_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ARTIFICERFORTIFY_R:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Fortify
+    gem-color: Artificer R
+    ability:
+      ability1:
+        type: FORTIFY
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERFORTIFY_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+      shaped:
+        '1':
+          input:
+          - v cobblestone - 1.0..|m material beating_barkheart 1.0..|v glow_berries
+            - 1.0..
+          - m material peridot_shard 1.0..|m material spirit_of_ingenuity 1.0..|m
+            material peridot_shard 1.0..
+          - v glow_berries - 1.0..|m material beating_barkheart 1.0..|v cobblestone
+            - 1.0..
+SRT_ARTIFICERFORTIFY_SR:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Fortify
+    gem-color: Artificer SR
+    ability:
+      ability1:
+        type: FORTIFY
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERFORTIFY_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ARTIFICERFORTIFY_SL:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Fortify
+    gem-color: Artificer SL
+    ability:
+      ability1:
+        type: FORTIFY
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERFORTIFY_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ARTIFICERWALL_CONSTRUCT_R:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Wall Construct
+    gem-color: Artificer R
+    ability:
+      ability1:
+        type: WALL_CONSTRUCT
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERWALL_CONSTRUCT_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+      shaped:
+        '1':
+          input:
+          - v hay_block - 1.0..|m material beating_barkheart 1.0..|v hay_block - 1.0..
+          - m material peridot_shard 1.0..|m material spirit_of_ingenuity 1.0..|m
+            material peridot_shard 1.0..
+          - v hay_block - 1.0..|m material magical_twig 1.0..|v hay_block - 1.0..
+SRT_ARTIFICERWALL_CONSTRUCT_SR:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Wall Construct
+    gem-color: Artificer SR
+    ability:
+      ability1:
+        type: WALL_CONSTRUCT
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERWALL_CONSTRUCT_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ARTIFICERWALL_CONSTRUCT_SL:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Wall Construct
+    gem-color: Artificer SL
+    ability:
+      ability1:
+        type: WALL_CONSTRUCT
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERWALL_CONSTRUCT_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ARTIFICERFRAG_GRENADE_R:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Frag Grenade
+    gem-color: Artificer R
+    ability:
+      ability1:
+        type: FRAG_GRENADE
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERFRAG_GRENADE_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+      shaped:
+        '1':
+          input:
+          - v dark_prismarine - 1.0..|m material magical_twig 1.0..|v tnt - 1.0..
+          - m material peridot_shard 1.0..|m material spirit_of_ingenuity 1.0..|m
+            material peridot_shard 1.0..
+          - v tnt - 1.0..|m material magical_twig 1.0..|v dark_prismarine - 1.0..
+SRT_ARTIFICERFRAG_GRENADE_SR:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Frag Grenade
+    gem-color: Artificer SR
+    ability:
+      ability1:
+        type: FRAG_GRENADE
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERFRAG_GRENADE_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ARTIFICERFRAG_GRENADE_SL:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Frag Grenade
+    gem-color: Artificer SL
+    ability:
+      ability1:
+        type: FRAG_GRENADE
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERFRAG_GRENADE_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ARTIFICERTURRET_CONSTRUCT_R:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Turret Construct
+    gem-color: Artificer R
+    ability:
+      ability1:
+        type: TURRET_CONSTRUCT
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERTURRET_CONSTRUCT_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ARTIFICERTURRET_CONSTRUCT_SR:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Turret Construct
+    gem-color: Artificer SR
+    ability:
+      ability1:
+        type: TURRET_CONSTRUCT
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERTURRET_CONSTRUCT_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ARTIFICERTURRET_CONSTRUCT_SL:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Turret Construct
+    gem-color: Artificer SL
+    ability:
+      ability1:
+        type: TURRET_CONSTRUCT
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERTURRET_CONSTRUCT_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ARTIFICERSCRAP_CANNON_R:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Scrap Cannon
+    gem-color: Artificer R
+    ability:
+      ability1:
+        type: SCRAP_CANNON
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERSCRAP_CANNON_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ARTIFICERSCRAP_CANNON_SR:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Scrap Cannon
+    gem-color: Artificer SR
+    ability:
+      ability1:
+        type: SCRAP_CANNON
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERSCRAP_CANNON_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ARTIFICERSCRAP_CANNON_SL:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Scrap Cannon
+    gem-color: Artificer SL
+    ability:
+      ability1:
+        type: SCRAP_CANNON
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERSCRAP_CANNON_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ARTIFICERFLASH_OF_GENIUS_R:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Flash of Genius
+    gem-color: Artificer R
+    ability:
+      ability1:
+        type: FLASH_OF_GENIUS
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERFLASH_OF_GENIUS_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ARTIFICERFLASH_OF_GENIUS_SR:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Flash of Genius
+    gem-color: Artificer SR
+    ability:
+      ability1:
+        type: FLASH_OF_GENIUS
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERFLASH_OF_GENIUS_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ARTIFICERFLASH_OF_GENIUS_SL:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Flash of Genius
+    gem-color: Artificer SL
+    ability:
+      ability1:
+        type: FLASH_OF_GENIUS
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERFLASH_OF_GENIUS_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ARTIFICERREINFORCE_R:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Reinforce
+    gem-color: Artificer R
+    ability:
+      ability1:
+        type: REINFORCE
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERREINFORCE_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ARTIFICERREINFORCE_SR:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Reinforce
+    gem-color: Artificer SR
+    ability:
+      ability1:
+        type: REINFORCE
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERREINFORCE_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ARTIFICERREINFORCE_SL:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Reinforce
+    gem-color: Artificer SL
+    ability:
+      ability1:
+        type: REINFORCE
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERREINFORCE_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ARTIFICERFLASH_CANNON_R:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Flash Cannon
+    gem-color: Artificer R
+    ability:
+      ability1:
+        type: FLASH_CANNON
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERFLASH_CANNON_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ARTIFICERFLASH_CANNON_SR:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Flash Cannon
+    gem-color: Artificer SR
+    ability:
+      ability1:
+        type: FLASH_CANNON
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERFLASH_CANNON_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ARTIFICERFLASH_CANNON_SL:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Flash Cannon
+    gem-color: Artificer SL
+    ability:
+      ability1:
+        type: FLASH_CANNON
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERFLASH_CANNON_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ARTIFICERARTIFICER_BLINK_R:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Artificer Blink
+    gem-color: Artificer R
+    ability:
+      ability1:
+        type: ARTIFICER_BLINK
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERARTIFICER_BLINK_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ARTIFICERARTIFICER_BLINK_SR:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Artificer Blink
+    gem-color: Artificer SR
+    ability:
+      ability1:
+        type: ARTIFICER_BLINK
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERARTIFICER_BLINK_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ARTIFICERARTIFICER_BLINK_SL:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Artificer Blink
+    gem-color: Artificer SL
+    ability:
+      ability1:
+        type: ARTIFICER_BLINK
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ARTIFICERARTIFICER_BLINK_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+# mecha#
+SRT_MECHAROCKET_PODS_MK1_L:
+  base:
+    material: IRON_INGOT
+    name: §7[MECHA] Rocket Pods Mk1
+    gem-color: Mecha L
+    ability:
+      ability1:
+        type: ROCKET_PODS_MK1
+        mode: LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_MECHAROCKET_PODS_MK1_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+      shaped:
+        '1':
+          input:
+          - v tnt - 1.0..|m material beating_barkheart 1.0..|v tnt - 1.0..
+          - m material peridot_shard 1.0..|m material spirit_of_mecha 1.0..|m material
+            peridot_shard 1.0..
+          - v tnt - 1.0..|m material razor_sharp_leaf 1.0..|v tnt - 1.0..
+SRT_MECHAROCKET_PODS_MK1_SR:
+  base:
+    material: IRON_INGOT
+    name: §7[MECHA] Rocket Pods Mk1
+    gem-color: Mecha SR
+    ability:
+      ability1:
+        type: ROCKET_PODS_MK1
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_MECHAROCKET_PODS_MK1_L 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_MECHAROCKET_PODS_MK1_SL:
+  base:
+    material: IRON_INGOT
+    name: §7[MECHA] Rocket Pods Mk1
+    gem-color: Mecha SL
+    ability:
+      ability1:
+        type: ROCKET_PODS_MK1
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_MECHAROCKET_PODS_MK1_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+
+SRT_MECHASHIELD_GENERATOR_MK1_L:
+  base:
+    material: IRON_INGOT
+    name: §7[MECHA] Shield Generator Mk1
+    gem-color: Mecha L
+    ability:
+      ability1:
+        type: SHIELD_GENERATOR_MK1
+        mode: LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_MECHASHIELD_GENERATOR_MK1_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+      shaped:
+        '1':
+          input:
+          - v iron_ingot - 1.0..|m material beating_barkheart 1.0..|v iron_ingot -
+            1.0..
+          - m material peridot_shard 1.0..|m material spirit_of_mecha 1.0..|m material
+            peridot_shard 1.0..
+          - v iron_ingot - 1.0..|m material beating_barkheart 1.0..|v iron_ingot -
+            1.0..
+SRT_MECHASHIELD_GENERATOR_MK1_SR:
+  base:
+    material: IRON_INGOT
+    name: §7[MECHA] Shield Generator Mk1
+    gem-color: Mecha SR
+    ability:
+      ability1:
+        type: SHIELD_GENERATOR_MK1
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_MECHASHIELD_GENERATOR_MK1_L 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_MECHASHIELD_GENERATOR_MK1_SL:
+  base:
+    material: IRON_INGOT
+    name: §7[MECHA] Shield Generator Mk1
+    gem-color: Mecha SL
+    ability:
+      ability1:
+        type: SHIELD_GENERATOR_MK1
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_MECHASHIELD_GENERATOR_MK1_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+
+SRT_MECHAJET_PROPULSION_L:
+  base:
+    material: IRON_INGOT
+    name: §7[MECHA] Jet Propulsion
+    gem-color: Mecha L
+    ability:
+      ability1:
+        type: JET_PROPULSION
+        mode: LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_MECHAJET_PROPULSION_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+      shaped:
+        '1':
+          input:
+          - v piston - 1.0..|m material razor_sharp_leaf 1.0..|v piston - 1.0..
+          - m material peridot_shard 1.0..|m material spirit_of_mecha 1.0..|m material
+            peridot_shard 1.0..
+          - v tnt - 1.0..|m material magical_twig 1.0..|v tnt - 1.0..
+SRT_MECHAJET_PROPULSION_SR:
+  base:
+    material: IRON_INGOT
+    name: §7[MECHA] Jet Propulsion
+    gem-color: Mecha SR
+    ability:
+      ability1:
+        type: JET_PROPULSION
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_MECHAJET_PROPULSION_L 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_MECHAJET_PROPULSION_SL:
+  base:
+    material: IRON_INGOT
+    name: §7[MECHA] Jet Propulsion
+    gem-color: Mecha SL
+    ability:
+      ability1:
+        type: JET_PROPULSION
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_MECHAJET_PROPULSION_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_MECHAORBITAL_STRIKE_L:
+  base:
+    material: IRON_INGOT
+    name: §7[MECHA] Orbital Strike
+    gem-color: Mecha L
+    ability:
+      ability1:
+        type: ORBITAL_STRIKE
+        mode: LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_MECHAORBITAL_STRIKE_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+      shaped:
+        '1':
+          input:
+          - v glowstone - 1.0..|m material beating_barkheart 1.0..|v glowstone - 1.0..
+          - m material peridot_shard 1.0..|m material spirit_of_mecha 1.0..|m material
+            peridot_shard 1.0..
+          - v glowstone - 1.0..|m material magical_twig 1.0..|v glowstone - 1.0..
+SRT_MECHAORBITAL_STRIKE_SR:
+  base:
+    material: IRON_INGOT
+    name: §7[MECHA] Orbital Strike
+    gem-color: Mecha SR
+    ability:
+      ability1:
+        type: ORBITAL_STRIKE
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_MECHAORBITAL_STRIKE_L 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_MECHAORBITAL_STRIKE_SL:
+  base:
+    material: IRON_INGOT
+    name: §7[MECHA] Orbital Strike
+    gem-color: Mecha SL
+    ability:
+      ability1:
+        type: ORBITAL_STRIKE
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_MECHAORBITAL_STRIKE_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+# poison          
+SRT_ROGUEPLAGUE_POISON_R:
+  base:
+    material: IRON_INGOT
+    name: §5[CUNNING] Plague Poison
+    gem-color: Rogue R
+    ability:
+      ability1:
+        type: PLAGUE_POISON
+        mode: RIGHT_CLICK
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m material fluffy_cloud 1.0..|m material mother_spider_sac 1.0..|m material
+            fluffy_cloud 1.0..
+          - m material poison_shard_i 1.0..|m material spirit_of_cunning 1.0..|m material
+            poison_shard_i 1.0..
+          - m material fluffy_cloud 1.0..|m material wind_essence 1.0..|m material
+            fluffy_cloud 1.0..
+SRT_ROGUEPLAGUE_POISON_SR:
+  base:
+    material: IRON_INGOT
+    name: §5[CUNNING] Plague Poison
+    gem-color: Rogue SR
+    ability:
+      ability1:
+        type: PLAGUE_POISON
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUEPLAGUE_POISON_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_ROGUEPLAGUE_POISON_SL:
+  base:
+    material: IRON_INGOT
+    name: §5[CUNNING] Plague Poison
+    gem-color: Rogue SL
+    ability:
+      ability1:
+        type: PLAGUE_POISON
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_ROGUEPLAGUE_POISON_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+
+SRT_GOJOBERSERKER_BREW_R:
+  base:
+    material: IRON_INGOT
+    name: §5[STRONGEST] Berserker Brew
+    gem-color: Gojo R
+    ability:
+      ability1:
+        type: BERSERKER_BREW
+        mode: RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOBERSERKER_BREW_SL 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+      shaped:
+        '1':
+          input:
+          - v quartz - 1.0..|m material mother_spider_sac 1.0..|v glowstone - 1.0..
+          - m material poison_shard_i 1.0..|m material spirit_of_strongest 1.0..|m
+            material poison_shard_i 1.0..
+          - v glowstone - 1.0..|m material sea_puppet 1.0..|v quartz - 1.0..
+SRT_GOJOBERSERKER_BREW_SR:
+  base:
+    material: IRON_INGOT
+    name: §5[STRONGEST] Berserker Brew
+    gem-color: Gojo SR
+    ability:
+      ability1:
+        type: BERSERKER_BREW
+        mode: SHIFT_RIGHT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOBERSERKER_BREW_R 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+SRT_GOJOBERSERKER_BREW_SL:
+  base:
+    material: IRON_INGOT
+    name: §5[STRONGEST] Berserker Brew
+    gem-color: Gojo SL
+    ability:
+      ability1:
+        type: BERSERKER_BREW
+        mode: SHIFT_LEFT_CLICK
+    crafting:
+      shapeless:
+        '1':
+          input:
+          - m gem_stone SRT_GOJOBERSERKER_BREW_SR 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+# leftclick#          
+SRT_SWORDSMANWIND_SLASH_L:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Wind Slash
+    gem-color: Swordsman L
+    ability:
+      ability1:
+        type: WIND_SLASH
+        mode: LEFT_CLICK
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m material lightweight_blade 1.0..|v AIR 0 1..
+          - m material moonstone_shard 1.0..|m material spirit_of_sword 1.0..|m material
+            moonstone_shard 1.0..
+          - v AIR 0 1..|m material lightweight_blade 1.0..|v AIR 0 1..
+
+SRT_ARTIFICERSCRAP_STAB_L:
+  base:
+    material: IRON_INGOT
+    name: §5[INGENUITY] Scrap Stab
+    gem-color: Artificer L
+    ability:
+      ability1:
+        type: SCRAP_STAB
+        mode: LEFT_CLICK
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m material razor_sharp_leaf 1.0..|v AIR 0 1..
+          - m material peridot_shard 1.0..|m material spirit_of_ingenuity 1.0..|m
+            material peridot_shard 1.0..
+          - v AIR 0 1..|m material magical_twig 1.0..|v AIR 0 1..
+SRT_ROGUEBLINDING_SLASH_L:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Blinding Slash
+    gem-color: Rogue L
+    ability:
+      ability1:
+        type: BLINDING_SLASH
+        mode: LEFT_CLICK
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1.0..|m material floating_pebbles 1.0..|v AIR 0 1.0..
+          - m material moonstone_shard 1.0..|m material spirit_of_cunning 1.0..|m
+            material moonstone_shard 1.0..
+          - v AIR 0 1.0..|m material lightweight_blade 1.0..|v AIR 0 1.0..
+
+SRT_GOJOGOJO_PUNCH_L:
+  base:
+    material: IRON_INGOT
+    name: §b[STRONGEST] Gojo Punch
+    gem-color: Gojo L
+    ability:
+      ability1:
+        type: GOJO_PUNCH
+        mode: LEFT_CLICK
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m material sea_puppet 1.0..|v AIR 0 1..
+          - m material aquamarine_shard 1.0..|m material spirit_of_strongest 1.0..|m
+            material aquamarine_shard 1.0..
+          - v AIR 0 1..|m material twirly_tentashell 1.0..|v AIR 0 1..
+SRT_PALETTEERSPLASH_CLASH_L:
+  base:
+    material: IRON_INGOT
+    name: <gradient:#ECC4F5:#FFFFFF>[ARTISTRY] </gradient><gradient:#FFFFFF:#9EE6D1>Splash
+      </gradient><gradient:#9EE6D1:#9EA7E6>Clash</gradient>
+    gem-color: Paletteer L
+    ability:
+      ability1:
+        type: SPLASH_CLASH
+        mode: LEFT_CLICK
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m material cone_of_the_sea 1.0..|v AIR 0 1..
+          - m material aquamarine_shard 1.0..|m material spirit_of_artistry 1.0..|m
+            material aquamarine_shard 1.0..
+          - v AIR 0 1..|m material twirly_tentashell 1.0..|v AIR 0 1..
+SRT_MECHAMINIGUN_MK1_R:
+  base:
+    material: IRON_INGOT
+    name: §7[MECHA] Minigun Mk1
+    gem-color: Mecha R
+    ability:
+      ability1:
+        type: MINIGUN_MK1
+        mode: RIGHT_CLICK
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m material razor_sharp_leaf 1.0..|v AIR 0 1..
+          - m material peridot_shard 1.0..|m material spirit_of_mecha 1.0..|m material
+            peridot_shard 1.0..
+          - v AIR 0 1..|m material beating_barkheart 1.0..|v AIR 0 1..
+
+SRT_SWORDSMANICE_SWORD_L:
+  base:
+    material: IRON_INGOT
+    name: §f[SWORD] Ice Sword
+    gem-color: Swordsman L
+    ability:
+      ability1:
+        type: ICE_SWORD
+        mode: LEFT_CLICK
+SRT_GOJOBLACK_FLASH_L:
+  base:
+    material: IRON_INGOT
+    name: §5[STRONGEST] Black Flash
+    gem-color: Gojo L
+    ability:
+      ability1:
+        type: BLACK_FLASH
+        mode: LEFT_CLICK
+SRT_ARTIFICERSCRAP_STAB_MK2_L:
+  base:
+    material: IRON_INGOT
+    name: §5[Ingenuity] Scrap Stab Mk2
+    gem-color: Artificer L
+    ability:
+      ability1:
+        type: SCRAP_STAB_MK2
+        mode: LEFT_CLICK
+SRT_ROGUERAINING_BLADES_L:
+  base:
+    material: IRON_INGOT
+    name: §f[CUNNING] Raining Blades
+    gem-color: Rogue L
+    ability:
+      ability1:
+        type: RAINING_BLADES
+        mode: LEFT_CLICK
+# Stat#
+SRT_STATCRYSTAL1:
+  base:
+    material: GOLD_INGOT
+    name: §f[STAT] Shell Crystal
+    max-health: -2.0
+    gem-color: Stat
+    physical-damage: 15.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m material swirly_shell 1.0..|v AIR 0 1..
+          - m material brawler_claw 1.0..|m material aquamarine_shard 1.0..|m material
+            brawler_claw 1.0..
+          - v AIR 0 1..|m material swirly_shell 1.0..|v AIR 0 1..
+SRT_STATCRYSTAL2:
+  base:
+    material: GOLD_INGOT
+    name: '[STAT] Haste Crystal'
+    gem-color: Stat
+    fall-damage-reduction: 20.0
+    movement-speed: 0.01
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m material twisted_horn 1.0..|v AIR 0 1..
+          - m material dragonfly_wing 1.0..|m material moonstone_shard 1.0..|m material
+            dragonfly_wing 1.0..
+          - v AIR 0 1..|m material twisted_horn 1.0..|v AIR 0 1..
+SRT_STATCRYSTAL3:
+  base:
+    material: GOLD_INGOT
+    name: §f[STAT] Rock Crystal
+    gem-color: Stat
+    armor: 3.0
+    element:
+      wind:
+        defense: 2.0
+      earth:
+        defense: 2.0
+      fire: {}
+      water:
+        defense: 2.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m material lifebearer_shell 1.0..|m material moonstone_shard 1.0..|m material
+            lifebearer_shell 1.0..
+          - m material lifebearer_shell 1.0..|m material peridot_shard 1.0..|m material
+            lifebearer_shell 1.0..
+          - m material lifebearer_shell 1.0..|m material aquamarine_shard 1.0..|m
+            material lifebearer_shell 1.0..
+    physical-damage: -10.0
+SRT_STATCRYSTAL4:
+  base:
+    material: GOLD_INGOT
+    name: '[STAT] Earthen Crystal'
+    gem-color: Stat
+    max-health: 6.0
+    movement-speed: -0.02
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1.0..|m material mother_spider_sac 1.0..|v AIR 0 1.0..
+          - m material aggravated_moss 1.0..|m material peridot_shard 1.0..|m material
+            aggravated_moss 1.0..
+          - v AIR 0 1.0..|m material sticky_web 1.0..|v AIR 0 1.0..
+
+SRT_STATCRYSTAL5:
+  base:
+    material: GOLD_INGOT
+    name: '[STAT] Strength Crystal'
+    gem-color: Stat
+    movement-speed: -0.02
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1.0..|m material lifebearer_shell 1.0..|v AIR 0 1.0..
+          - m material Magical_Twig 1.0..|m material peridot_shard 1.0..|m material
+            Magical_Twig 1.0..
+          - v AIR 0 1.0..|m material lifebearer_shell 1.0..|v AIR 0 1.0..
+    physical-damage: 15.0
+
+SRT_STATCRYSTAL6:
+  base:
+    material: GOLD_INGOT
+    name: '[STAT] Ghost Crystal'
+    gem-color: Stat
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1.0..|m material wind_essence 1.0..|v AIR 0 1.0..
+          - m material fluffy_cloud 1.0..|m material moonstone_shard 1.0..|m material
+            fluffy_cloud 1.0..
+          - v AIR 0 1.0..|m material wind_essence 1.0..|v AIR 0 1.0..
+    movement-speed: 0.05
+    max-health: -2.0
+    armor: -2.0
+    physical-damage: -7.0
+
+
+SRT_STATCRYSTAL7:
+  base:
+    material: GOLD_INGOT
+    name: §f[STAT] Fool's Crystal
+    gem-color: Stat
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1.0..|m material feyblest_dust 1.0..|v AIR 0 1.0..
+          - m material sticky_web 1.0..|m material peridot_shard 1.0..|m material
+            sticky_web 1.0..
+          - v AIR 0 1.0..|m material feyblest_dust 1.0..|v AIR 0 1.0..
+    max-health: 2.0
+    armor: 2.0
+    ability:
+      ability1:
+        type: TAUNT_ENEMY
+        mode: TIMER
+        timer: 1.0
+
+SRT_STATCRYSTAL8:
+  base:
+    material: GOLD_INGOT
+    name: §f[STAT] Fleetful Crystal
+    gem-color: Stat
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1.0..|m material springy_leg 1.0..|v AIR 0 1.0..
+          - m material dragonfly_wing 1.0..|m material moonstone_shard 1.0..|m material
+            dragonfly_wing 1.0..
+          - v AIR 0 1.0..|m material springy_leg 1.0..|v AIR 0 1.0..
+    ability:
+      ability1:
+        type: FLEETFUL_BREEZE
+        mode: DAMAGED_BY_ENTITY
+    movement-speed: 0.03
+
+SRT_STATCRYSTAL9:
+  base:
+    material: GOLD_INGOT
+    name: §f[STAT] Pulsing Crystal
+    gem-color: Stat
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1.0..|m material bickering_beak 1.0..|v AIR 0 1.0..
+          - m material solidified_droplet 1.0..|m material aquamarine_shard 1.0..|m
+            material solidified_droplet 1.0..
+          - v AIR 0 1.0..|m material bickering_beak 1.0..|v AIR 0 1.0..
+    ability:
+      ability1:
+        type: WATER_PULSE
+        mode: DAMAGED_BY_ENTITY
+    armor: 2.0

@@ -1,0 +1,698 @@
+##!!xyz.gamars.objects.base.MMOItem
+STEEL_INGOT:
+  base:
+    material: IRON_INGOT
+    name: '&fSteel Ingot'
+    disable-repairing: true
+    disable-crafting: true
+    lore:
+    - '&7Can be used at the steel crafting'
+    - '&7station to craft advanced gear.'
+UNCOMMON_WEAPON_ESSENCE:
+  base:
+    material: BLAZE_POWDER
+    enchants:
+      unbreaking: 1
+    hide-enchants: true
+    lore:
+    - '&7Can be used to craft uncommon items.'
+    name: '&eUncommon Weapon Essence'
+    disable-crafting: true
+    disable-smelting: true
+WITHER_ESSENCE:
+  base:
+    material: BLACK_DYE
+    name: '&8Wither Essence'
+    disable-crafting: true
+RARE_WEAPON_ESSENCE:
+  base:
+    material: BLAZE_POWDER
+    enchants:
+      unbreaking: 1
+    hide-enchants: true
+    lore:
+    - '&7Can be used to craft rare items.'
+    name: '&eRare Weapon Essence'
+    disable-crafting: true
+    disable-smelting: true
+VERY_RARE_WEAPON_ESSENCE:
+  base:
+    material: BLAZE_POWDER
+    enchants:
+      unbreaking: 1
+    hide-enchants: true
+    lore:
+    - '&7Can be used to craft very rare items.'
+    name: '&eVery rare Weapon Essence'
+    disable-crafting: true
+    disable-smelting: true
+LEGENDARY_WEAPON_ESSENCE:
+  base:
+    material: BLAZE_POWDER
+    enchants:
+      unbreaking: 1
+    hide-enchants: true
+    lore:
+    - '&7Can be used to craft legendary items.'
+    name: '&eLegendary Weapon Essence'
+    disable-crafting: true
+    disable-smelting: true
+MYTHICAL_WEAPON_ESSENCE:
+  base:
+    material: BLAZE_POWDER
+    enchants:
+      unbreaking: 1
+    hide-enchants: true
+    lore:
+    - '&7Can be used to craft mythical items.'
+    name: '&eMythical Weapon Essence'
+    disable-crafting: true
+    disable-smelting: true
+EPIC_WEAPON_ESSENCE:
+  base:
+    material: BLAZE_POWDER
+    enchants:
+      unbreaking: 1
+    hide-enchants: true
+    lore:
+    - '&7Can be used to craft epic items.'
+    name: '&eEpic Weapon Essence'
+    disable-crafting: true
+    disable-smelting: true
+MAGICAL_WEAPON_ESSENCE:
+  base:
+    material: BLAZE_POWDER
+    enchants:
+      unbreaking: 1
+    hide-enchants: true
+    lore:
+    - '&7Can be used to craft magical items.'
+    name: '&eMagical Weapon Essence'
+    disable-crafting: true
+    disable-smelting: true
+UNIQUE_WEAPON_ESSENCE:
+  base:
+    material: BLAZE_POWDER
+    enchants:
+      unbreaking: 1
+    hide-enchants: true
+    lore:
+    - '&7Can be used to craft unique items.'
+    name: '&eUnique Weapon Essence'
+    disable-crafting: true
+    disable-smelting: true
+WEAPON_POWDER:
+  base:
+    material: GUNPOWDER
+    tier: TRASH
+    name: '&7Broken Weapon Powder'
+    lore:
+    - '&7Can be used as regular gunpowder.'
+    - '&7Obtained when deconstructing an item.'
+MAGIC_FRAGMENT:
+  base:
+    material: MAGENTA_DYE
+    disable-crafting: true
+    tier: RARE
+    name: '&8Magic Fragment'
+MAGIC_ESSENCE:
+  base:
+    material: BOOK
+    disable-crafting: true
+    tier: RARE
+    name: '&5Magic Essence'
+FIRE_ESSENCE:
+  base:
+    material: BLAZE_POWDER
+    disable-crafting: true
+    name: '&bFire Essence'
+    hide-enchants: true
+    enchants:
+      unbreaking: 1
+    crafting:
+      shaped: {}
+RARE_DIAMOND:
+  base:
+    material: DIAMOND
+    enchants:
+      unbreaking: 1
+    hide-enchants: true
+    disable-crafting: true
+    name: '&bRare Diamond'
+SILVER_COIN:
+  base:
+    material: IRON_NUGGET
+    name: '&fSilver Coin'
+    lore:
+    - '&7A very shiny silver coin.'
+    enchants:
+      unbreaking: 1
+    hide-enchants: true
+    disable-crafting: true
+SILVER_INGOT:
+  base:
+    material: IRON_INGOT
+    name: '&fSilver Ingot'
+    lore:
+    - '&7A very shiny silver ingot.'
+    enchants:
+      unbreaking: 1
+    hide-enchants: true
+    disable-crafting: true
+    crafting:
+      shaped:
+        '1':
+        - MATERIAL.SILVER_COIN MATERIAL.SILVER_COIN MATERIAL.SILVER_COIN
+        - MATERIAL.SILVER_COIN MATERIAL.SILVER_COIN MATERIAL.SILVER_COIN
+        - MATERIAL.SILVER_COIN MATERIAL.SILVER_COIN MATERIAL.SILVER_COIN
+RESTORATION_GEM:
+  base:
+    material: EMERALD
+    name: §a§lRestoration Gem
+    lore:
+    - §7This gem can be used to repair magic items.
+    tier: UNCOMMON
+ITEM_UPGRADER:
+  base:
+    material: PAPER
+    name: §fUniversal Item Upgrader
+    lore:
+    - §7§oThis blueprint can upgrade any weapon.
+    tier: RARE
+DARK_NETHERITE:
+  base:
+    material: NETHERITE_INGOT
+    name: §cDark Netherite
+    lore:
+    - §cNetherite, but darker.
+    - §eCan be used in a smithing table
+    - §ewith netherite items.
+    tier: RARE
+
+
+# #Earth##    
+AGGRAVATED_MOSS:
+  base:
+    material: GLOWSTONE_DUST
+    name: §2§lAggravated Moss
+    disable-interaction: true
+    disable-repairing: true
+    tier: MATERIAL
+    crafting:
+      furnace:
+        '1':
+          input: []
+          item: v green_glazed_terracotta - 1.0..
+FEYBLEST_DUST:
+  base:
+    material: GLOWSTONE_DUST
+    hide-enchants: true
+    name: §e§lFeyblest Dust
+    tier: MATERIAL
+STICKY_WEB:
+  base:
+    material: GLOWSTONE_DUST
+    name: §lSticky Web
+    tier: MATERIAL
+THORNBARK:
+  base:
+    material: GLOWSTONE_DUST
+    name: §6§lThornbark
+    hide-enchants: true
+    tier: MATERIAL
+MOTHER_SPIDER_SAC:
+  base:
+    material: GLOWSTONE_DUST
+    name: §2§lMother Spider Sac
+    tier: MATERIAL
+CORRUPTED_STONE_HEART:
+  base:
+    material: GLOWSTONE_DUST
+    name: §8§lCorrupted Stone Heart
+    tier: MATERIAL
+
+
+RAZOR_SHARP_LEAF:
+  base:
+    material: GLOWSTONE_DUST
+    name: §2§lRazor Sharp Leaf
+    hide-enchants: true
+    tier: MATERIAL
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1.0..|m material jagged_leaf 1.0..|m material thornbark 1.0..
+          - m material jagged_leaf 1.0..|v cobblestone - 1.0..|m material jagged_leaf
+            1.0..
+          - m material thornbark 1.0..|m material jagged_leaf 1.0..|v AIR 0 1.0..
+BEATING_BARKHEART:
+  base:
+    material: GLOWSTONE_DUST
+    name: §2§lBeating Barkheart
+    hide-enchants: true
+    tier: MATERIAL
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m material thornbark 1.0..|v AIR 0 1..
+          - m material thornbark 1.0..|m material lifebearer_shell 1.0..|m material
+            thornbark 1.0..
+          - v AIR 0 1..|m material thornbark 1.0..|v AIR 0 1..
+MAGICAL_TWIG:
+  base:
+    material: GLOWSTONE_DUST
+    name: §2§lMagical Twig
+    tier: MATERIAL
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m material feyblest_dust 1.0..|v AIR 0 1..
+          - m material jagged_leaf 1.0..|v stick - 1.0..|m material jagged_leaf 1.0..
+          - v AIR 0 1..|v stick - 1.0..|v AIR 0 1..
+ENHANCED_AMETHYST_SHARD:
+  base:
+    material: GLOWSTONE_DUST
+    name: §5§lEnhanced Amethyst Shard
+    hide-enchants: true
+    tier: MATERIAL
+    crafting:
+      shaped: {}
+      furnace:
+        '1':
+          input: []
+          item: v amethyst_block - 1.0..
+LIFEBEARER_SHELL:
+  base:
+    material: GLOWSTONE_DUST
+    name: §e§lLifebearer Shell
+    hide-enchants: true
+    tier: MATERIAL
+
+
+RED_MUSHROOM_CHUNK:
+  base:
+    material: GLOWSTONE_DUST
+    name: §c§lRed Mushroom Chunk
+    hide-enchants: true
+    tier: MATERIAL
+
+JAGGED_LEAF:
+  base:
+    material: GLOWSTONE_DUST
+    name: §2§lJagged Leaf
+    hide-enchants: true
+    tier: MATERIAL
+POISON_SHARD_I:
+  base:
+    material: GLOWSTONE_DUST
+    name: §5§lPoison Shard
+    hide-enchants: true
+    tier: MATERIAL
+    crafting:
+      shapeless: {}
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1.0..|m CONSUMABLE STINKY_CHEESE 1.0..|v AIR 0 1.0..
+          - m CONSUMABLE STINKY_CHEESE 1.0..|m MATERIAL MOTHER_SPIDER_SAC 1.0..|m
+            CONSUMABLE STINKY_CHEESE 1.0..
+          - v AIR 0 1.0..|m CONSUMABLE STINKY_CHEESE 1.0..|v AIR 0 1.0..
+# Shards & Spirits#
+SPIRIT_OF_ARTISTRY:
+  base:
+    material: GLOWSTONE_DUST
+    name: §f§lSpirit of Artistry
+    hide-enchants: true
+    tier: MATERIAL
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m material aquamarine_shard 1.0..|m material cone_of_the_sea
+            1.0..
+          - m material aquamarine_shard 1.0..|m material solidified_droplet 1.0..|m
+            material aquamarine_shard 1.0..
+          - m material solidified_droplet 1.0..|m material aquamarine_shard 1.0..|v
+            AIR 0 1..
+SPIRIT_OF_SWORD:
+  base:
+    material: GLOWSTONE_DUST
+    name: §f§lSpirit of Sword
+    hide-enchants: true
+    tier: MATERIAL
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m material windswept_dust 1.0..|m material moonstone_shard 1.0..|m material
+            lightweight_blade 1.0..
+          - m material moonstone_shard 1.0..|m material lightweight_blade 1.0..|m
+            material moonstone_shard 1.0..
+          - v stick - 1.0..|m material moonstone_shard 1.0..|m material windswept_dust
+            1.0..
+SPIRIT_OF_STRONGEST:
+  base:
+    material: GLOWSTONE_DUST
+    name: §b§lSpirit of Strongest
+    hide-enchants: true
+    tier: MATERIAL
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m miscellaneous bloonana 1.0..|m material aquamarine_shard 1.0..|m miscellaneous
+            bloonana 1.0..
+          - m material aquamarine_shard 1.0..|m material sea_puppet 1.0..|m material
+            aquamarine_shard 1.0..
+          - m miscellaneous bloonana 1.0..|m material aquamarine_shard 1.0..|m miscellaneous
+            bloonana 1.0..
+SPIRIT_OF_INGENUITY:
+  base:
+    material: GLOWSTONE_DUST
+    name: §5§lSpirit of Ingenuity
+    hide-enchants: true
+    tier: MATERIAL
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m material jagged_leaf 1.0..|v AIR 0 1..
+          - m material peridot_shard 1.0..|m material beating_barkheart 1.0..|m material
+            peridot_shard 1.0..
+          - m material peridot_shard 1.0..|m material thornbark 1.0..|m material peridot_shard
+            1.0..
+SPIRIT_OF_CUNNING:
+  base:
+    material: GLOWSTONE_DUST
+    name: §f§lSpirit of Cunning
+    hide-enchants: true
+    tier: MATERIAL
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v stick - 1.0..|m material moonstone_shard 1.0..|m material eroded_pebble
+            1.0..
+          - m material moonstone_shard 1.0..|m material lightweight_blade 1.0..|m
+            material moonstone_shard 1.0..
+          - m material eroded_pebble 1.0..|m material moonstone_shard 1.0..|m material
+            lightweight_blade 1.0..
+SPIRIT_OF_MECHA:
+  base:
+    material: GLOWSTONE_DUST
+    name: §7§lSpirit of Mecha
+    hide-enchants: true
+    tier: MATERIAL
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m material magical_twig 1.0..|v AIR 0 1..|v AIR 0 1..
+          - m material thornbark 1.0..|m material peridot_shard 1.0..|m material peridot_shard
+            1.0..
+          - m material thornbark 1.0..|m material peridot_shard 1.0..|m material peridot_shard
+            1.0..
+PERIDOT_SHARD:
+  base:
+    material: GLOWSTONE_DUST
+    name: §2§lPeridot Shard
+    tier: MATERIAL
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1.0..|m material aggravated_moss 1.0..|v AIR 0 1.0..
+          - m material aggravated_moss 1.0..|m material thornbark 1.0..|m material
+            aggravated_moss 1.0..
+          - v AIR 0 1.0..|m material aggravated_moss 1.0..|v AIR 0 1.0..
+MOONSTONE_SHARD:
+  base:
+    material: GLOWSTONE_DUST
+    name: §f§lMoonstone Shard
+    hide-enchants: true
+    tier: MATERIAL
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1.0..|m material enhanced_amethyst_shard 1.0..|v AIR 0 1.0..
+          - m material enhanced_amethyst_shard 1.0..|m material calcite_core 1.0..|m
+            material enhanced_amethyst_shard 1.0..
+          - v AIR 0 1.0..|m material enhanced_amethyst_shard 1.0..|v AIR 0 1.0..
+AQUAMARINE_SHARD:
+  base:
+    material: GLOWSTONE_DUST
+    name: §9§lAquamarine Shard
+    hide-enchants: true
+    tier: MATERIAL
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1.0..|m material aquamarine_fragment 1.0..|v AIR 0 1.0..
+          - m material aquamarine_fragment 1.0..|m material solidified_droplet 1.0..|m
+            material aquamarine_fragment 1.0..
+          - v AIR 0 1.0..|m material aquamarine_fragment 1.0..|v AIR 0 1.0..
+# #AIR##
+Swift_Blade:
+  base:
+    material: GLOWSTONE_DUST
+    name: §f§lSwift Blade
+    tier: MATERIAL
+LIGHTWEIGHT_BLADE:
+  base:
+    material: GLOWSTONE_DUST
+    name: §f§lLightweight Blade
+    hide-enchants: true
+    tier: MATERIAL
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m material springy_leg 1.0..|m material dragonfly_wing 1.0..
+          - m material springy_leg 1.0..|m material dragonfly_wing 1.0..|m material
+            springy_leg 1.0..
+          - m material twisted_horn 1.0..|m material springy_leg 1.0..|v AIR 0 1..
+          hidden: false
+WIND_ESSENCE:
+  base:
+    material: GLOWSTONE_DUST
+    name: §f§lWind Essence
+    hide-enchants: true
+    tier: MATERIAL
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m material fluffy_cloud 1.0..|v AIR 0 1..
+          - m material fluffy_cloud 1.0..|m material calcite_core 1.0..|m material
+            fluffy_cloud 1.0..
+          - v AIR 0 1..|m material fluffy_cloud 1.0..|v AIR 0 1..
+
+FLOATING_PEBBLES:
+  base:
+    material: GLOWSTONE_DUST
+    name: §f§lFloating Pebbles
+    hide-enchants: true
+    tier: MATERIAL
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m material eroded_pebble 1.0..|m material windswept_dust 1.0..|m material
+            eroded_pebble 1.0..
+          - m material windswept_dust 1.0..|m material eroded_pebble 1.0..|m material
+            windswept_dust 1.0..
+          - m material eroded_pebble 1.0..|m material windswept_dust 1.0..|m material
+            eroded_pebble 1.0..
+WINDSWEPT_DUST:
+  base:
+    material: GLOWSTONE_DUST
+    name: §f§lWindswept Dust
+    hide-enchants: true
+    tier: MATERIAL
+ERODED_PEBBLE:
+  base:
+    material: GLOWSTONE_DUST
+    name: §f§lEroded Pebble
+    hide-enchants: true
+    tier: MATERIAL
+SPRINGY_LEG:
+  base:
+    material: GLOWSTONE_DUST
+    name: §f§lSpringy Leg
+    hide-enchants: true
+    tier: MATERIAL
+
+FLUFFY_CLOUD:
+  base:
+    material: GLOWSTONE_DUST
+    name: §f§lFluffy Cloud
+    hide-enchants: true
+    tier: MATERIAL
+TWISTED_HORN:
+  base:
+    material: GLOWSTONE_DUST
+    name: §f§lTwisted Horn
+    hide-enchants: true
+    tier: MATERIAL
+
+DRAGONFLY_WING:
+  base:
+    material: GLOWSTONE_DUST
+    name: §f§lDragonfly Wing
+    hide-enchants: true
+    tier: MATERIAL
+CALCITE_CORE:
+  base:
+    material: GLOWSTONE_DUST
+    name: §f§lCalcite Core
+    hide-enchants: true
+    tier: MATERIAL
+
+WINDWORN_RICE_HAT:
+  base:
+    material: GLOWSTONE_DUST
+    name: §f§lWindworn Rice Hat
+    hide-enchants: true
+    tier: MATERIAL
+# water#    
+WEBBED_FOOT:
+  base:
+    material: GLOWSTONE_DUST
+    name: §9§lWebbed Foot
+    hide-enchants: true
+    tier: MATERIAL
+
+SOLIDIFIED_DROPLET:
+  base:
+    material: GLOWSTONE_DUST
+    name: §9§lSolidified Droplet
+    hide-enchants: true
+    tier: MATERIAL
+SWIRLY_SHELL:
+  base:
+    material: GLOWSTONE_DUST
+    name: §9§lSwirly Shell
+    hide-enchants: true
+    tier: MATERIAL
+BRAWLER_CLAW:
+  base:
+    material: GLOWSTONE_DUST
+    name: §9§lBrawler Claw
+    hide-enchants: true
+    tier: MATERIAL
+BICKERING_BEAK:
+  base:
+    material: GLOWSTONE_DUST
+    name: §9§lBickering Beak
+    hide-enchants: true
+    tier: MATERIAL
+
+AQUAMARINE_FRAGMENT:
+  base:
+    material: GLOWSTONE_DUST
+    name: §9§lAquamarine Fragment
+    hide-enchants: true
+    tier: MATERIAL
+    crafting:
+      furnace:
+        '1':
+          input: []
+          item: v blue_glazed_terracotta - 1.0..
+SHARK_FIN:
+  base:
+    material: GLOWSTONE_DUST
+    name: §9§lShark Fin
+    hide-enchants: true
+    tier: MATERIAL
+FISH_GILLS:
+  base:
+    material: GLOWSTONE_DUST
+    name: §9§lFish Gills
+    hide-enchants: true
+    tier: MATERIAL
+STINGY_TENTACLE:
+  base:
+    material: GLOWSTONE_DUST
+    name: §9§lStingy Tentacle
+    hide-enchants: true
+    tier: MATERIAL
+CONE_OF_THE_SEA:
+  base:
+    material: GLOWSTONE_DUST
+    name: §9§lCone of the Sea
+    hide-enchants: true
+    tier: MATERIAL
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m material solidified_droplet 1.0..|m material solidified_droplet 1.0..|m
+            material solidified_droplet 1.0..
+          - m material bickering_beak 1.0..|m material solidified_droplet 1.0..|m
+            material bickering_beak 1.0..
+          - v AIR 0 1..|m material bickering_beak 1.0..|v AIR 0 1..
+
+SEA_PUPPET:
+  base:
+    material: GLOWSTONE_DUST
+    name: §9§lSea Puppet
+    hide-enchants: true
+    tier: MATERIAL
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m material brawler_claw 1.0..|v AIR 0 1..|m material brawler_claw 1.0..
+          - v AIR 0 1..|v rotten_flesh - 1.0..|v AIR 0 1..
+          - m material webbed_foot 1.0..|v AIR 0 1..|m material webbed_foot 1.0..
+
+TWIRLY_TENTASHELL:
+  base:
+    material: GLOWSTONE_DUST
+    name: §9§lTwirly Tentashell
+    hide-enchants: true
+    tier: MATERIAL
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m material stingy_tentacle 1.0..|v AIR 0 1..
+          - m material stingy_tentacle 1.0..|m material swirly_shell 1.0..|m material
+            stingy_tentacle 1.0..
+          - v AIR 0 1..|m material stingy_tentacle 1.0..|v AIR 0 1..
+WOKE_BEARDS_LEG:
+  base:
+    material: GLOWSTONE_DUST
+    name: §9§lWoke Beard's Leg
+    hide-enchants: true
+    tier: MATERIAL
+PLANETARY_GOOP:
+  base:
+    material: GLOWSTONE_DUST
+    name: §b§lPlanetary Goop
+    hide-enchants: true
+    tier: MATERIAL
+# mounts#
+CONSUMED_DEER_CRACKERS:
+  base:
+    material: GLOWSTONE_DUST
+    name: §2§lConsumed Deer Crackers
+    hide-enchants: true
+    tier: MATERIAL
+BROKEN_SHARK_EGG:
+  base:
+    material: GLOWSTONE_DUST
+    name: §9§lBroken Shark Egg
+    hide-enchants: true
+    tier: MATERIAL
+DRIED_SLIME_GEL:
+  base:
+    material: GLOWSTONE_DUST
+    name: §lDried Slime Gel
+    tier: MATERIAL
+

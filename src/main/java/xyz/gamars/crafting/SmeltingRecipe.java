@@ -4,24 +4,14 @@ import xyz.gamars.enums.SmeltingType;
 
 public class SmeltingRecipe {
 
-    private SmeltingType smeltingType;
     private CraftingItem item;
     private Integer time;
     private Double experience;
 
-    public SmeltingRecipe(SmeltingType smeltingType, CraftingItem item, Integer time, Double experience) {
-        this.smeltingType = smeltingType;
+    public SmeltingRecipe(CraftingItem item, Integer time, Double experience) {
         this.item = item;
         this.time = time;
         this.experience = experience;
-    }
-
-    public SmeltingType getSmeltingType() {
-        return smeltingType;
-    }
-
-    public void setSmeltingType(SmeltingType smeltingType) {
-        this.smeltingType = smeltingType;
     }
 
     public CraftingItem getItem() {

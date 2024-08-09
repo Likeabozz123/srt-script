@@ -2,24 +2,17 @@ package xyz.gamars.objects.base;
 
 public class SoundEffect {
 
-    private String id;
     private String sound;
-    private Integer volume;
-    private Integer pitch;
+    private Double volume;
+    private Double pitch;
 
-    public SoundEffect(String id, String sound, Integer volume, Integer pitch) {
-        this.id = id;
+    public SoundEffect(String sound, Double volume, Double pitch) {
         this.sound = sound;
         this.volume = volume;
         this.pitch = pitch;
     }
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
+    public SoundEffect() {
     }
 
     public String getSound() {
@@ -30,19 +23,19 @@ public class SoundEffect {
         this.sound = sound;
     }
 
-    public Integer getVolume() {
+    public Double getVolume() {
         return volume;
     }
 
-    public void setVolume(Integer volume) {
+    public void setVolume(Double volume) {
         this.volume = volume;
     }
 
-    public Integer getPitch() {
+    public Double getPitch() {
         return pitch;
     }
 
-    public void setPitch(Integer pitch) {
+    public void setPitch(Double pitch) {
         this.pitch = pitch;
     }
 }

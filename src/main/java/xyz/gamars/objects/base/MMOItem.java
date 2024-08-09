@@ -3,6 +3,7 @@ package xyz.gamars.objects.base;
 import xyz.gamars.crafting.CraftingRecipe;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 
 public class MMOItem {
@@ -10,14 +11,14 @@ public class MMOItem {
     private String id;
     private String material;
     private Integer durability;
-    private Integer maxDurability;
     private Integer customModelData;
+    private Integer maxDurability;
     private Boolean willBreak;
     private String name;
     private ArrayList<String> lore;
     private String loreFormat;
     private String displayedType;
-    private ArrayList<Map<String, Integer>> enchants;
+    private HashMap<String, Integer> enchants;
     private Boolean hideEnchants;
     private String permission;
     private ItemParticle itemParticle;
@@ -29,37 +30,38 @@ public class MMOItem {
     private Boolean disableRepairing;
     private Boolean disableAttackPassive;
     private ArrayList<String> requiredClass;
-    private Double attackDamage;
-    private Double attackSpeed;
-    private Double criticalStrikeChance;
-    private Double criticalStrikePower;
-    private Double blockPower;
-    private Double blockRating;
-    private Double blockCooldownReduction;
-    private Double dodgeRating;
-    private Double dodgeCooldownReduction;
-    private Double parryRating;
-    private Double parryCooldownReduction;
-    private Double cooldownReduction;
-    private Double manaCost;
-    private Double staminaCost;
-    private Double pveDamage;
-    private Double pvpDamage;
-    private Double weaponDamage;
-    private Double skillDamage;
-    private Double projectileDamage;
-    private Double magicDamage;
-    private Double physicalDamage;
-    private Double defense;
-    private Double damageReduction;
-    private Double fallDamageReduction;
-    private Double projectileDamageReduction;
-    private Double physicalDamageReduction;
-    private Double fireDamageReduction;
-    private Double magicDamageReduction;
-    private Double pveDamageReduction;
-    private Double pvpDamageReduction;
-    private Double undeadDamage;
+    private NumericStat successRate;
+    private NumericStat attackDamage;
+    private NumericStat attackSpeed;
+    private NumericStat criticalStrikeChance;
+    private NumericStat criticalStrikePower;
+    private NumericStat blockPower;
+    private NumericStat blockRating;
+    private NumericStat blockCooldownReduction;
+    private NumericStat dodgeRating;
+    private NumericStat dodgeCooldownReduction;
+    private NumericStat parryRating;
+    private NumericStat parryCooldownReduction;
+    private NumericStat cooldownReduction;
+    private NumericStat manaCost;
+    private NumericStat staminaCost;
+    private NumericStat pveDamage;
+    private NumericStat pvpDamage;
+    private NumericStat weaponDamage;
+    private NumericStat skillDamage;
+    private NumericStat projectileDamage;
+    private NumericStat magicDamage;
+    private NumericStat physicalDamage;
+    private NumericStat defense;
+    private NumericStat damageReduction;
+    private NumericStat fallDamageReduction;
+    private NumericStat projectileDamageReduction;
+    private NumericStat physicalDamageReduction;
+    private NumericStat fireDamageReduction;
+    private NumericStat magicDamageReduction;
+    private NumericStat pveDamageReduction;
+    private NumericStat pvpDamageReduction;
+    private NumericStat undeadDamage;
     private Boolean unbreakable;
     private String tier;
     private String set;
@@ -68,35 +70,143 @@ public class MMOItem {
     private Double maxHealth;
     private Boolean unstackable;
     private Double maxMana;
-    private Double knockbackResistance;
+    private NumericStat knockbackResistance;
     private Double movementSpeed;
     private Boolean twoHanded;
     private Double equipPriority;
-    private ArrayList<Map<String, Integer>> permEffects;
+    private ArrayList<HashMap<String, Integer>> permEffects;
     private ArrayList<String> grantedPermissions;
     private Double itemCooldown;
     private CraftingRecipe crafting;
     private String craftPermission;
     private Double craftedAmount;
-    private ArrayList<SoundEffect> sounds;
-    private ArrayList<Map<String, Map<String, Double>>> elements;
-    private ArrayList<Command> commands;
+    private HashMap<String, SoundEffect> sounds;
+    private HashMap<String, HashMap<String, HashMap<String, Double>>> element;
+    private HashMap<String, HashMap<String, Command>> commands;
     private ArrayList<String> gemSockets;
     private String repairType;
-    private ArrayList<Ability> ability;
+    private HashMap<String, HashMap<String, Ability>> ability;
     private ArrayList<String> upgrade;
     private Double healthRegeneration;
     private Double manaRegeneration;
     private Double maxStamina;
     private Double staminaRegeneration;
     private Double additionalExperience;
-    private Double factionDamageEnemy;
+    private NumericStat factionDamageEnemy;
+    private Double requiredLevel;
     private Double requiredDexterity;
     private Double requiredStrength;
     private Double professionEnchanting;
     private Double professionSmithing;
     private Double professionMining;
 
+    public MMOItem() {
+    }
+
+    @Override
+    public String toString() {
+        return "MMOItem{" +
+                "id='" + id + '\'' +
+                ", material='" + material + '\'' +
+                ", durability=" + durability +
+                ", customModelData=" + customModelData +
+                ", maxDurability=" + maxDurability +
+                ", willBreak=" + willBreak +
+                ", name='" + name + '\'' +
+                ", lore=" + lore +
+                ", loreFormat='" + loreFormat + '\'' +
+                ", displayedType='" + displayedType + '\'' +
+                ", enchants=" + enchants +
+                ", hideEnchants=" + hideEnchants +
+                ", permission='" + permission + '\'' +
+                ", itemParticle=" + itemParticle +
+                ", disableInteraction=" + disableInteraction +
+                ", disableCrafting=" + disableCrafting +
+                ", disableSmelting=" + disableSmelting +
+                ", disableSmithing=" + disableSmithing +
+                ", disableEnchanting=" + disableEnchanting +
+                ", disableRepairing=" + disableRepairing +
+                ", disableAttackPassive=" + disableAttackPassive +
+                ", requiredClass=" + requiredClass +
+                ", successRate=" + successRate +
+                ", attackDamage=" + attackDamage +
+                ", attackSpeed=" + attackSpeed +
+                ", criticalStrikeChance=" + criticalStrikeChance +
+                ", criticalStrikePower=" + criticalStrikePower +
+                ", blockPower=" + blockPower +
+                ", blockRating=" + blockRating +
+                ", blockCooldownReduction=" + blockCooldownReduction +
+                ", dodgeRating=" + dodgeRating +
+                ", dodgeCooldownReduction=" + dodgeCooldownReduction +
+                ", parryRating=" + parryRating +
+                ", parryCooldownReduction=" + parryCooldownReduction +
+                ", cooldownReduction=" + cooldownReduction +
+                ", manaCost=" + manaCost +
+                ", staminaCost=" + staminaCost +
+                ", pveDamage=" + pveDamage +
+                ", pvpDamage=" + pvpDamage +
+                ", weaponDamage=" + weaponDamage +
+                ", skillDamage=" + skillDamage +
+                ", projectileDamage=" + projectileDamage +
+                ", magicDamage=" + magicDamage +
+                ", physicalDamage=" + physicalDamage +
+                ", defense=" + defense +
+                ", damageReduction=" + damageReduction +
+                ", fallDamageReduction=" + fallDamageReduction +
+                ", projectileDamageReduction=" + projectileDamageReduction +
+                ", physicalDamageReduction=" + physicalDamageReduction +
+                ", fireDamageReduction=" + fireDamageReduction +
+                ", magicDamageReduction=" + magicDamageReduction +
+                ", pveDamageReduction=" + pveDamageReduction +
+                ", pvpDamageReduction=" + pvpDamageReduction +
+                ", undeadDamage=" + undeadDamage +
+                ", unbreakable=" + unbreakable +
+                ", tier='" + tier + '\'' +
+                ", set='" + set + '\'' +
+                ", armor=" + armor +
+                ", armorToughness=" + armorToughness +
+                ", maxHealth=" + maxHealth +
+                ", unstackable=" + unstackable +
+                ", maxMana=" + maxMana +
+                ", knockbackResistance=" + knockbackResistance +
+                ", movementSpeed=" + movementSpeed +
+                ", twoHanded=" + twoHanded +
+                ", equipPriority=" + equipPriority +
+                ", permEffects=" + permEffects +
+                ", grantedPermissions=" + grantedPermissions +
+                ", itemCooldown=" + itemCooldown +
+                ", crafting=" + crafting +
+                ", craftPermission='" + craftPermission + '\'' +
+                ", craftedAmount=" + craftedAmount +
+                ", sounds=" + sounds +
+                ", element=" + element +
+                ", commands=" + commands +
+                ", gemSockets=" + gemSockets +
+                ", repairType='" + repairType + '\'' +
+                ", ability=" + ability +
+                ", upgrade=" + upgrade +
+                ", healthRegeneration=" + healthRegeneration +
+                ", manaRegeneration=" + manaRegeneration +
+                ", maxStamina=" + maxStamina +
+                ", staminaRegeneration=" + staminaRegeneration +
+                ", additionalExperience=" + additionalExperience +
+                ", factionDamageEnemy=" + factionDamageEnemy +
+                ", requiredLevel=" + requiredLevel +
+                ", requiredDexterity=" + requiredDexterity +
+                ", requiredStrength=" + requiredStrength +
+                ", professionEnchanting=" + professionEnchanting +
+                ", professionSmithing=" + professionSmithing +
+                ", professionMining=" + professionMining +
+                '}';
+    }
+
+    public Double getRequiredLevel() {
+        return requiredLevel;
+    }
+
+    public void setRequiredLevel(Double requiredLevel) {
+        this.requiredLevel = requiredLevel;
+    }
 
     public String getId() {
         return id;
@@ -178,11 +288,11 @@ public class MMOItem {
         this.displayedType = displayedType;
     }
 
-    public ArrayList<Map<String, Integer>> getEnchants() {
+    public HashMap<String, Integer>  getEnchants() {
         return enchants;
     }
 
-    public void setEnchants(ArrayList<Map<String, Integer>> enchants) {
+    public void setEnchants(HashMap<String, Integer>  enchants) {
         this.enchants = enchants;
     }
 
@@ -274,251 +384,259 @@ public class MMOItem {
         this.requiredClass = requiredClass;
     }
 
-    public Double getAttackDamage() {
+    public NumericStat getSuccessRate() {
+        return successRate;
+    }
+
+    public void setSuccessRate(NumericStat successRate) {
+        this.successRate = successRate;
+    }
+
+    public NumericStat getAttackDamage() {
         return attackDamage;
     }
 
-    public void setAttackDamage(Double attackDamage) {
+    public void setAttackDamage(NumericStat attackDamage) {
         this.attackDamage = attackDamage;
     }
 
-    public Double getAttackSpeed() {
+    public NumericStat getAttackSpeed() {
         return attackSpeed;
     }
 
-    public void setAttackSpeed(Double attackSpeed) {
+    public void setAttackSpeed(NumericStat attackSpeed) {
         this.attackSpeed = attackSpeed;
     }
 
-    public Double getCriticalStrikeChance() {
+    public NumericStat getCriticalStrikeChance() {
         return criticalStrikeChance;
     }
 
-    public void setCriticalStrikeChance(Double criticalStrikeChance) {
+    public void setCriticalStrikeChance(NumericStat criticalStrikeChance) {
         this.criticalStrikeChance = criticalStrikeChance;
     }
 
-    public Double getCriticalStrikePower() {
+    public NumericStat getCriticalStrikePower() {
         return criticalStrikePower;
     }
 
-    public void setCriticalStrikePower(Double criticalStrikePower) {
+    public void setCriticalStrikePower(NumericStat criticalStrikePower) {
         this.criticalStrikePower = criticalStrikePower;
     }
 
-    public Double getBlockPower() {
+    public NumericStat getBlockPower() {
         return blockPower;
     }
 
-    public void setBlockPower(Double blockPower) {
+    public void setBlockPower(NumericStat blockPower) {
         this.blockPower = blockPower;
     }
 
-    public Double getBlockRating() {
+    public NumericStat getBlockRating() {
         return blockRating;
     }
 
-    public void setBlockRating(Double blockRating) {
+    public void setBlockRating(NumericStat blockRating) {
         this.blockRating = blockRating;
     }
 
-    public Double getBlockCooldownReduction() {
+    public NumericStat getBlockCooldownReduction() {
         return blockCooldownReduction;
     }
 
-    public void setBlockCooldownReduction(Double blockCooldownReduction) {
+    public void setBlockCooldownReduction(NumericStat blockCooldownReduction) {
         this.blockCooldownReduction = blockCooldownReduction;
     }
 
-    public Double getDodgeRating() {
+    public NumericStat getDodgeRating() {
         return dodgeRating;
     }
 
-    public void setDodgeRating(Double dodgeRating) {
+    public void setDodgeRating(NumericStat dodgeRating) {
         this.dodgeRating = dodgeRating;
     }
 
-    public Double getDodgeCooldownReduction() {
+    public NumericStat getDodgeCooldownReduction() {
         return dodgeCooldownReduction;
     }
 
-    public void setDodgeCooldownReduction(Double dodgeCooldownReduction) {
+    public void setDodgeCooldownReduction(NumericStat dodgeCooldownReduction) {
         this.dodgeCooldownReduction = dodgeCooldownReduction;
     }
 
-    public Double getParryRating() {
+    public NumericStat getParryRating() {
         return parryRating;
     }
 
-    public void setParryRating(Double parryRating) {
+    public void setParryRating(NumericStat parryRating) {
         this.parryRating = parryRating;
     }
 
-    public Double getParryCooldownReduction() {
+    public NumericStat getParryCooldownReduction() {
         return parryCooldownReduction;
     }
 
-    public void setParryCooldownReduction(Double parryCooldownReduction) {
+    public void setParryCooldownReduction(NumericStat parryCooldownReduction) {
         this.parryCooldownReduction = parryCooldownReduction;
     }
 
-    public Double getCooldownReduction() {
+    public NumericStat getCooldownReduction() {
         return cooldownReduction;
     }
 
-    public void setCooldownReduction(Double cooldownReduction) {
+    public void setCooldownReduction(NumericStat cooldownReduction) {
         this.cooldownReduction = cooldownReduction;
     }
 
-    public Double getManaCost() {
+    public NumericStat getManaCost() {
         return manaCost;
     }
 
-    public void setManaCost(Double manaCost) {
+    public void setManaCost(NumericStat manaCost) {
         this.manaCost = manaCost;
     }
 
-    public Double getStaminaCost() {
+    public NumericStat getStaminaCost() {
         return staminaCost;
     }
 
-    public void setStaminaCost(Double staminaCost) {
+    public void setStaminaCost(NumericStat staminaCost) {
         this.staminaCost = staminaCost;
     }
 
-    public Double getPveDamage() {
+    public NumericStat getPveDamage() {
         return pveDamage;
     }
 
-    public void setPveDamage(Double pveDamage) {
+    public void setPveDamage(NumericStat pveDamage) {
         this.pveDamage = pveDamage;
     }
 
-    public Double getPvpDamage() {
+    public NumericStat getPvpDamage() {
         return pvpDamage;
     }
 
-    public void setPvpDamage(Double pvpDamage) {
+    public void setPvpDamage(NumericStat pvpDamage) {
         this.pvpDamage = pvpDamage;
     }
 
-    public Double getWeaponDamage() {
+    public NumericStat getWeaponDamage() {
         return weaponDamage;
     }
 
-    public void setWeaponDamage(Double weaponDamage) {
+    public void setWeaponDamage(NumericStat weaponDamage) {
         this.weaponDamage = weaponDamage;
     }
 
-    public Double getSkillDamage() {
+    public NumericStat getSkillDamage() {
         return skillDamage;
     }
 
-    public void setSkillDamage(Double skillDamage) {
+    public void setSkillDamage(NumericStat skillDamage) {
         this.skillDamage = skillDamage;
     }
 
-    public Double getProjectileDamage() {
+    public NumericStat getProjectileDamage() {
         return projectileDamage;
     }
 
-    public void setProjectileDamage(Double projectileDamage) {
+    public void setProjectileDamage(NumericStat projectileDamage) {
         this.projectileDamage = projectileDamage;
     }
 
-    public Double getMagicDamage() {
+    public NumericStat getMagicDamage() {
         return magicDamage;
     }
 
-    public void setMagicDamage(Double magicDamage) {
+    public void setMagicDamage(NumericStat magicDamage) {
         this.magicDamage = magicDamage;
     }
 
-    public Double getPhysicalDamage() {
+    public NumericStat getPhysicalDamage() {
         return physicalDamage;
     }
 
-    public void setPhysicalDamage(Double physicalDamage) {
+    public void setPhysicalDamage(NumericStat physicalDamage) {
         this.physicalDamage = physicalDamage;
     }
 
-    public Double getDefense() {
+    public NumericStat getDefense() {
         return defense;
     }
 
-    public void setDefense(Double defense) {
+    public void setDefense(NumericStat defense) {
         this.defense = defense;
     }
 
-    public Double getDamageReduction() {
+    public NumericStat getDamageReduction() {
         return damageReduction;
     }
 
-    public void setDamageReduction(Double damageReduction) {
+    public void setDamageReduction(NumericStat damageReduction) {
         this.damageReduction = damageReduction;
     }
 
-    public Double getFallDamageReduction() {
+    public NumericStat getFallDamageReduction() {
         return fallDamageReduction;
     }
 
-    public void setFallDamageReduction(Double fallDamageReduction) {
+    public void setFallDamageReduction(NumericStat fallDamageReduction) {
         this.fallDamageReduction = fallDamageReduction;
     }
 
-    public Double getProjectileDamageReduction() {
+    public NumericStat getProjectileDamageReduction() {
         return projectileDamageReduction;
     }
 
-    public void setProjectileDamageReduction(Double projectileDamageReduction) {
+    public void setProjectileDamageReduction(NumericStat projectileDamageReduction) {
         this.projectileDamageReduction = projectileDamageReduction;
     }
 
-    public Double getPhysicalDamageReduction() {
+    public NumericStat getPhysicalDamageReduction() {
         return physicalDamageReduction;
     }
 
-    public void setPhysicalDamageReduction(Double physicalDamageReduction) {
+    public void setPhysicalDamageReduction(NumericStat physicalDamageReduction) {
         this.physicalDamageReduction = physicalDamageReduction;
     }
 
-    public Double getFireDamageReduction() {
+    public NumericStat getFireDamageReduction() {
         return fireDamageReduction;
     }
 
-    public void setFireDamageReduction(Double fireDamageReduction) {
+    public void setFireDamageReduction(NumericStat fireDamageReduction) {
         this.fireDamageReduction = fireDamageReduction;
     }
 
-    public Double getMagicDamageReduction() {
+    public NumericStat getMagicDamageReduction() {
         return magicDamageReduction;
     }
 
-    public void setMagicDamageReduction(Double magicDamageReduction) {
+    public void setMagicDamageReduction(NumericStat magicDamageReduction) {
         this.magicDamageReduction = magicDamageReduction;
     }
 
-    public Double getPveDamageReduction() {
+    public NumericStat getPveDamageReduction() {
         return pveDamageReduction;
     }
 
-    public void setPveDamageReduction(Double pveDamageReduction) {
+    public void setPveDamageReduction(NumericStat pveDamageReduction) {
         this.pveDamageReduction = pveDamageReduction;
     }
 
-    public Double getPvpDamageReduction() {
+    public NumericStat getPvpDamageReduction() {
         return pvpDamageReduction;
     }
 
-    public void setPvpDamageReduction(Double pvpDamageReduction) {
+    public void setPvpDamageReduction(NumericStat pvpDamageReduction) {
         this.pvpDamageReduction = pvpDamageReduction;
     }
 
-    public Double getUndeadDamage() {
+    public NumericStat getUndeadDamage() {
         return undeadDamage;
     }
 
-    public void setUndeadDamage(Double undeadDamage) {
+    public void setUndeadDamage(NumericStat undeadDamage) {
         this.undeadDamage = undeadDamage;
     }
 
@@ -586,11 +704,11 @@ public class MMOItem {
         this.maxMana = maxMana;
     }
 
-    public Double getKnockbackResistance() {
+    public NumericStat getKnockbackResistance() {
         return knockbackResistance;
     }
 
-    public void setKnockbackResistance(Double knockbackResistance) {
+    public void setKnockbackResistance(NumericStat knockbackResistance) {
         this.knockbackResistance = knockbackResistance;
     }
 
@@ -618,11 +736,11 @@ public class MMOItem {
         this.equipPriority = equipPriority;
     }
 
-    public ArrayList<Map<String, Integer>> getPermEffects() {
+    public ArrayList<HashMap<String, Integer>> getPermEffects() {
         return permEffects;
     }
 
-    public void setPermEffects(ArrayList<Map<String, Integer>> permEffects) {
+    public void setPermEffects(ArrayList<HashMap<String, Integer>> permEffects) {
         this.permEffects = permEffects;
     }
 
@@ -666,27 +784,27 @@ public class MMOItem {
         this.craftedAmount = craftedAmount;
     }
 
-    public ArrayList<SoundEffect> getSounds() {
+    public HashMap<String, SoundEffect> getSounds() {
         return sounds;
     }
 
-    public void setSounds(ArrayList<SoundEffect> sounds) {
+    public void setSounds(HashMap<String, SoundEffect> sounds) {
         this.sounds = sounds;
     }
 
-    public ArrayList<Map<String, Map<String, Double>>> getElements() {
-        return elements;
+    public HashMap<String, HashMap<String, HashMap<String, Double>>> getElement() {
+        return element;
     }
 
-    public void setElements(ArrayList<Map<String, Map<String, Double>>> elements) {
-        this.elements = elements;
+    public void setElement(HashMap<String, HashMap<String, HashMap<String, Double>>> element) {
+        this.element = element;
     }
 
-    public ArrayList<Command> getCommands() {
+    public HashMap<String, HashMap<String, Command>> getCommands() {
         return commands;
     }
 
-    public void setCommands(ArrayList<Command> commands) {
+    public void setCommands(HashMap<String, HashMap<String, Command>> commands) {
         this.commands = commands;
     }
 
@@ -706,11 +824,11 @@ public class MMOItem {
         this.repairType = repairType;
     }
 
-    public ArrayList<Ability> getAbility() {
+    public HashMap<String, HashMap<String, Ability>> getAbility() {
         return ability;
     }
 
-    public void setAbility(ArrayList<Ability> ability) {
+    public void setAbility(HashMap<String, HashMap<String, Ability>> ability) {
         this.ability = ability;
     }
 
@@ -762,11 +880,11 @@ public class MMOItem {
         this.additionalExperience = additionalExperience;
     }
 
-    public Double getFactionDamageEnemy() {
+    public NumericStat getFactionDamageEnemy() {
         return factionDamageEnemy;
     }
 
-    public void setFactionDamageEnemy(Double factionDamageEnemy) {
+    public void setFactionDamageEnemy(NumericStat factionDamageEnemy) {
         this.factionDamageEnemy = factionDamageEnemy;
     }
 
@@ -808,99 +926,5 @@ public class MMOItem {
 
     public void setProfessionMining(Double professionMining) {
         this.professionMining = professionMining;
-    }
-
-    @Override
-    public String toString() {
-        return "MMOItem{" +
-                "id='" + id + '\'' +
-                ", material='" + material + '\'' +
-                ", durability=" + durability +
-                ", customModelData=" + customModelData +
-                ", willBreak=" + willBreak +
-                ", name='" + name + '\'' +
-                ", lore=" + lore +
-                ", loreFormat='" + loreFormat + '\'' +
-                ", displayedType='" + displayedType + '\'' +
-                ", enchants=" + enchants +
-                ", hideEnchants=" + hideEnchants +
-                ", permission='" + permission + '\'' +
-                ", itemParticle=" + itemParticle +
-                ", disableInteraction=" + disableInteraction +
-                ", disableCrafting=" + disableCrafting +
-                ", disableSmelting=" + disableSmelting +
-                ", disableSmithing=" + disableSmithing +
-                ", disableEnchanting=" + disableEnchanting +
-                ", disableRepairing=" + disableRepairing +
-                ", disableAttackPassive=" + disableAttackPassive +
-                ", requiredClass=" + requiredClass +
-                ", attackDamage=" + attackDamage +
-                ", attackSpeed=" + attackSpeed +
-                ", criticalStrikeChance=" + criticalStrikeChance +
-                ", criticalStrikePower=" + criticalStrikePower +
-                ", blockPower=" + blockPower +
-                ", blockRating=" + blockRating +
-                ", blockCooldownReduction=" + blockCooldownReduction +
-                ", dodgeRating=" + dodgeRating +
-                ", dodgeCooldownReduction=" + dodgeCooldownReduction +
-                ", parryRating=" + parryRating +
-                ", parryCooldownReduction=" + parryCooldownReduction +
-                ", cooldownReduction=" + cooldownReduction +
-                ", manaCost=" + manaCost +
-                ", staminaCost=" + staminaCost +
-                ", pveDamage=" + pveDamage +
-                ", pvpDamage=" + pvpDamage +
-                ", weaponDamage=" + weaponDamage +
-                ", skillDamage=" + skillDamage +
-                ", projectileDamage=" + projectileDamage +
-                ", magicDamage=" + magicDamage +
-                ", physicalDamage=" + physicalDamage +
-                ", defense=" + defense +
-                ", damageReduction=" + damageReduction +
-                ", fallDamageReduction=" + fallDamageReduction +
-                ", projectileDamageReduction=" + projectileDamageReduction +
-                ", physicalDamageReduction=" + physicalDamageReduction +
-                ", fireDamageReduction=" + fireDamageReduction +
-                ", magicDamageReduction=" + magicDamageReduction +
-                ", pveDamageReduction=" + pveDamageReduction +
-                ", pvpDamageReduction=" + pvpDamageReduction +
-                ", undeadDamage=" + undeadDamage +
-                ", unbreakable=" + unbreakable +
-                ", tier='" + tier + '\'' +
-                ", set='" + set + '\'' +
-                ", armor=" + armor +
-                ", armorToughness=" + armorToughness +
-                ", maxHealth=" + maxHealth +
-                ", unstackable=" + unstackable +
-                ", maxMana=" + maxMana +
-                ", knockbackResistance=" + knockbackResistance +
-                ", movementSpeed=" + movementSpeed +
-                ", twoHanded=" + twoHanded +
-                ", equipPriority=" + equipPriority +
-                ", permEffects=" + permEffects +
-                ", grantedPermissions=" + grantedPermissions +
-                ", itemCooldown=" + itemCooldown +
-                ", crafting=" + crafting +
-                ", craftPermission='" + craftPermission + '\'' +
-                ", craftedAmount=" + craftedAmount +
-                ", sounds=" + sounds +
-                ", elements=" + elements +
-                ", commands=" + commands +
-                ", gemSockets=" + gemSockets +
-                ", repairType='" + repairType + '\'' +
-                ", ability=" + ability +
-                ", upgrade=" + upgrade +
-                ", healthRegeneration=" + healthRegeneration +
-                ", manaRegeneration=" + manaRegeneration +
-                ", maxStamina=" + maxStamina +
-                ", staminaRegeneration=" + staminaRegeneration +
-                ", additionalExperience=" + additionalExperience +
-                ", factionDamageEnemy=" + factionDamageEnemy +
-                ", requiredDexterity=" + requiredDexterity +
-                ", requiredStrength=" + requiredStrength +
-                ", professionEnchanting=" + professionEnchanting +
-                ", professionSmithing=" + professionSmithing +
-                ", professionMining=" + professionMining +
-                '}';
     }
 }

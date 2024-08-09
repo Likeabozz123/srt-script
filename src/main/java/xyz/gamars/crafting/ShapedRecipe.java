@@ -6,6 +6,9 @@ public class ShapedRecipe {
 
     private ArrayList<CraftingItem> recipe;
 
+    public ShapedRecipe() {
+    }
+
     public ShapedRecipe(ArrayList<CraftingItem> recipe) {
         this.recipe = recipe;
     }
