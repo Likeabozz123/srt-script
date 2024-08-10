@@ -22,10 +22,13 @@ public class Main {
             System.out.println(file.toPath());
             MMOItemParser mmoItemParser = new MMOItemParser(file.getPath());
             items.putAll(mmoItemParser.parseItems());
-            items.forEach((id, item) -> {
-                System.out.println(id + " : " + item.getId());
-            });
         }
+
+        items.forEach((id, item) -> {
+            System.out.println(id);
+        });
+
+        System.out.println(items.size());
 
     }
 }
