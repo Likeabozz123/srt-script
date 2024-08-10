@@ -125,7 +125,7 @@ public class MMOItemDeserializer {
         baseTypeDescription.substituteProperty("granted-permissions", ArrayList.class, "getGrantedPermissions", "setGrantedPermissions");
         baseTypeDescription.substituteProperty("item-cooldown", NumericStat.class, "getItemCooldown", "setItemCooldown");
 
-        craftingTypeDescriptions.substituteProperty("shaped", HashMap.class, "getShapedRecipe", "setShapedRecipeMap");
+        craftingTypeDescriptions.substituteProperty("shaped", HashMap.class, "getShapedRecipes", "setShapedRecipeMap");
         craftingTypeDescriptions.substituteProperty("shapeless", HashMap.class, "getShapelessRecipe", "setShapelessRecipeMap");
         craftingTypeDescriptions.substituteProperty("furnace", HashMap.class, "getFurnaceRecipe", "setFurnaceRecipeMap");
         craftingTypeDescriptions.substituteProperty("blast", HashMap.class, "getBlastRecipe", "setBlastRecipeMap");

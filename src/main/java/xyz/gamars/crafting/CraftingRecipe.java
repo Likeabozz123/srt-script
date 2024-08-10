@@ -8,15 +8,15 @@ import java.util.HashMap;
 public class CraftingRecipe {
 
     private ArrayList<ShapelessRecipe> shapelessRecipe;
-    private ArrayList<ShapedRecipe> shapedRecipe;
+    private ArrayList<ShapedRecipe> shapedRecipes;
     private ArrayList<SmeltingRecipe> furnaceRecipes;
     private ArrayList<SmeltingRecipe> blastRecipes;
     private ArrayList<SmeltingRecipe> smokerRecipes;
     private ArrayList<SmeltingRecipe> campfireRecipes;
 
-    public CraftingRecipe(ArrayList<ShapelessRecipe> shapelessRecipe, ArrayList<ShapedRecipe> shapedRecipe, ArrayList<SmeltingRecipe> furnaceRecipes, ArrayList<SmeltingRecipe> blastRecipes, ArrayList<SmeltingRecipe> smokerRecipes, ArrayList<SmeltingRecipe> campfireRecipes) {
+    public CraftingRecipe(ArrayList<ShapelessRecipe> shapelessRecipe, ArrayList<ShapedRecipe> shapedRecipes, ArrayList<SmeltingRecipe> furnaceRecipes, ArrayList<SmeltingRecipe> blastRecipes, ArrayList<SmeltingRecipe> smokerRecipes, ArrayList<SmeltingRecipe> campfireRecipes) {
         this.shapelessRecipe = shapelessRecipe;
-        this.shapedRecipe = shapedRecipe;
+        this.shapedRecipes = shapedRecipes;
         this.furnaceRecipes = furnaceRecipes;
         this.blastRecipes = blastRecipes;
         this.smokerRecipes = smokerRecipes;
@@ -25,7 +25,7 @@ public class CraftingRecipe {
 
     public CraftingRecipe() {
         this.shapelessRecipe = new ArrayList<>();
-        this.shapedRecipe = new ArrayList<>();
+        this.shapedRecipes = new ArrayList<>();
         this.furnaceRecipes = new ArrayList<>();
         this.blastRecipes = new ArrayList<>();
         this.smokerRecipes = new ArrayList<>();
@@ -40,12 +40,12 @@ public class CraftingRecipe {
         this.shapelessRecipe = shapelessRecipe;
     }
 
-    public ArrayList<ShapedRecipe> getShapedRecipe() {
-        return shapedRecipe;
+    public ArrayList<ShapedRecipe> getShapedRecipes() {
+        return shapedRecipes;
     }
 
-    public void setShapedRecipe(ArrayList<ShapedRecipe> shapedRecipe) {
-        this.shapedRecipe = shapedRecipe;
+    public void setShapedRecipes(ArrayList<ShapedRecipe> shapedRecipes) {
+        this.shapedRecipes = shapedRecipes;
     }
 
     public void setShapedRecipeMap(HashMap<String, HashMap<String, ArrayList<String>>> map) {
@@ -64,7 +64,7 @@ public class CraftingRecipe {
                 craftingItems.add(readItemString(secondItemString));
                 craftingItems.add(readItemString(thirdItemString));
             });
-            shapedRecipe.add(new ShapedRecipe(craftingItems));
+            shapedRecipes.add(new ShapedRecipe(craftingItems));
         });
     }
 
@@ -134,6 +134,19 @@ public class CraftingRecipe {
 
     public void setCampfireRecipes(ArrayList<SmeltingRecipe> campfireRecipes) {
         this.campfireRecipes = campfireRecipes;
+    }
+
+    @Override
+    public String toString() {
+        String output = "    crafting:\n";
+
+        if (!shapedRecipes.isEmpty()) {
+            for (int i = 0; i < shapedRecipes.size(); i++) {
+                output += shapedRecipes.get(i).toString(i);
+            }
+        }
+
+        return output;
     }
 
     private CraftingItem readItemString(String itemString) {

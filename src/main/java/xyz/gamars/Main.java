@@ -1,34 +1,24 @@
 package xyz.gamars;
 
 import xyz.gamars.builders.CraftingRecipeBuilder;
-import xyz.gamars.crafting.CraftingItem;
-import xyz.gamars.crafting.ShapedRecipe;
+import xyz.gamars.crafting.CraftingRecipe;
 import xyz.gamars.enums.IDType;
-import xyz.gamars.objects.MMOItem;
-import xyz.gamars.parser.MMOItemParser;
-
-import java.io.File;
-import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.HashMap;
+import xyz.gamars.objects.MMOItems;
+import xyz.gamars.utils.QuickCraftUtils;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
 
-        HashMap<String, MMOItem> items = new HashMap<>();
-        File[] files = new File("mmoitem").listFiles();
-        for (File file : files) {
-            System.out.println(file.toPath());
-            MMOItemParser mmoItemParser = new MMOItemParser(file.getPath());
-            items.putAll(mmoItemParser.parseItems());
-        }
+        MMOItems.registerItems();
 
-        items.forEach((id, item) -> {
-            System.out.println(id);
-        });
-
-        System.out.println(items.size());
+        CraftingRecipeBuilder craftingRecipeBuilder = CraftingRecipeBuilder.craftingRecipe();
+        craftingRecipeBuilder.shapedRecipe(QuickCraftUtils.quickShaped(
+                MMOItems.RAZOR_SHARP_LEAF, MMOItems.RAZOR_SHARP_LEAF, MMOItems.RAZOR_SHARP_LEAF,
+                MMOItems.RAZOR_SHARP_LEAF, MMOItems.RAZOR_SHARP_LEAF, MMOItems.RAZOR_SHARP_LEAF,
+                MMOItems.RAZOR_SHARP_LEAF, MMOItems.RAZOR_SHARP_LEAF, MMOItems.RAZOR_SHARP_LEAF, IDType.MMO_MATERIAL));
+        CraftingRecipe craftingRecipe = craftingRecipeBuilder.build();
+        System.out.println(craftingRecipe);
 
     }
 }
