@@ -128,6 +128,123 @@ public class MMOItem {
 
     }
 
+    @Override
+    public String toString() {
+        return "MMOItem{" +
+                "id='" + id + '\'' +
+                ", material='" + material + '\'' +
+                ", durability=" + durability +
+                ", customModelData=" + customModelData +
+                ", maxDurability=" + maxDurability +
+                ", willBreak=" + willBreak +
+                ", name='" + name + '\'' +
+                ", lore=" + lore +
+                ", loreFormat='" + loreFormat + '\'' +
+                ", displayedType='" + displayedType + '\'' +
+                ", enchants=" + enchants +
+                ", hideEnchants=" + hideEnchants +
+                ", permission='" + permission + '\'' +
+                ", itemParticle=" + itemParticle +
+                ", disableInteraction=" + disableInteraction +
+                ", disableCrafting=" + disableCrafting +
+                ", disableSmelting=" + disableSmelting +
+                ", disableSmithing=" + disableSmithing +
+                ", disableEnchanting=" + disableEnchanting +
+                ", disableRepairing=" + disableRepairing +
+                ", disableAttackPassive=" + disableAttackPassive +
+                ", requiredClass=" + requiredClass +
+                ", successRate=" + successRate +
+                ", attackDamage=" + attackDamage +
+                ", attackSpeed=" + attackSpeed +
+                ", criticalStrikeChance=" + criticalStrikeChance +
+                ", criticalStrikePower=" + criticalStrikePower +
+                ", blockPower=" + blockPower +
+                ", blockRating=" + blockRating +
+                ", blockCooldownReduction=" + blockCooldownReduction +
+                ", dodgeRating=" + dodgeRating +
+                ", dodgeCooldownReduction=" + dodgeCooldownReduction +
+                ", parryRating=" + parryRating +
+                ", parryCooldownReduction=" + parryCooldownReduction +
+                ", cooldownReduction=" + cooldownReduction +
+                ", manaCost=" + manaCost +
+                ", staminaCost=" + staminaCost +
+                ", pveDamage=" + pveDamage +
+                ", pvpDamage=" + pvpDamage +
+                ", weaponDamage=" + weaponDamage +
+                ", skillDamage=" + skillDamage +
+                ", projectileDamage=" + projectileDamage +
+                ", magicDamage=" + magicDamage +
+                ", physicalDamage=" + physicalDamage +
+                ", defense=" + defense +
+                ", damageReduction=" + damageReduction +
+                ", fallDamageReduction=" + fallDamageReduction +
+                ", projectileDamageReduction=" + projectileDamageReduction +
+                ", physicalDamageReduction=" + physicalDamageReduction +
+                ", fireDamageReduction=" + fireDamageReduction +
+                ", magicDamageReduction=" + magicDamageReduction +
+                ", pveDamageReduction=" + pveDamageReduction +
+                ", pvpDamageReduction=" + pvpDamageReduction +
+                ", undeadDamage=" + undeadDamage +
+                ", unbreakable=" + unbreakable +
+                ", tier='" + tier + '\'' +
+                ", set='" + set + '\'' +
+                ", armor=" + armor +
+                ", armorToughness=" + armorToughness +
+                ", maxHealth=" + maxHealth +
+                ", unstackable=" + unstackable +
+                ", maxMana=" + maxMana +
+                ", knockbackResistance=" + knockbackResistance +
+                ", movementSpeed=" + movementSpeed +
+                ", twoHanded=" + twoHanded +
+                ", equipPriority=" + equipPriority +
+                ", permEffects=" + permEffects +
+                ", grantedPermissions=" + grantedPermissions +
+                ", itemCooldown=" + itemCooldown +
+                ", crafting=" + crafting +
+                ", craftPermission='" + craftPermission + '\'' +
+                ", craftedAmount=" + craftedAmount +
+                ", sounds=" + sounds +
+                ", element=" + element +
+                ", commands=" + commands +
+                ", gemSockets=" + gemSockets +
+                ", repairType='" + repairType + '\'' +
+                ", ability=" + ability +
+                ", upgrade=" + upgrade +
+                ", healthRegeneration=" + healthRegeneration +
+                ", manaRegeneration=" + manaRegeneration +
+                ", maxStamina=" + maxStamina +
+                ", staminaRegeneration=" + staminaRegeneration +
+                ", additionalExperience=" + additionalExperience +
+                ", factionDamageEnemy=" + factionDamageEnemy +
+                ", requiredLevel=" + requiredLevel +
+                ", requiredDexterity=" + requiredDexterity +
+                ", requiredStrength=" + requiredStrength +
+                ", professionEnchanting=" + professionEnchanting +
+                ", professionSmithing=" + professionSmithing +
+                ", professionMining=" + professionMining +
+                ", disableRightClickConsume=" + disableRightClickConsume +
+                ", restoreHealth=" + restoreHealth +
+                ", restoreFood=" + restoreFood +
+                ", restoreSaturation=" + restoreSaturation +
+                ", restoreMana=" + restoreMana +
+                ", restoreStamina=" + restoreStamina +
+                ", canIdentify=" + canIdentify +
+                ", canDeconstruct=" + canDeconstruct +
+                ", canDeskin=" + canDeskin +
+                ", effects=" + effects +
+                ", soulbindingChance=" + soulbindingChance +
+                ", souldboundBreakChance=" + souldboundBreakChance +
+                ", soulboundLevel=" + soulboundLevel +
+                ", vanillaEating=" + vanillaEating +
+                ", inedible=" + inedible +
+                ", maxConsume=" + maxConsume +
+                ", repair=" + repair +
+                ", arrowParticles=" + arrowParticles +
+                ", arrowVelocity=" + arrowVelocity +
+                ", arrowPotionEffects=" + arrowPotionEffects +
+                '}';
+    }
+
     public Boolean getDisableRightClickConsume() {
         return disableRightClickConsume;
     }
