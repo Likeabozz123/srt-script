@@ -1,5 +1,7 @@
 package xyz.gamars.objects.base;
 
+import java.util.HashMap;
+
 public class ItemParticle {
 
     private String type;
@@ -10,6 +12,8 @@ public class ItemParticle {
     private Double speed;
     private Double rotationSpeed;
     private Double height;
+    private HashMap<String, Object> color;
+
 
     public ItemParticle(String type, String particle, Double amount, Double radius, Double speed, Double rotationSpeed, Double height) {
         this.type = type;
@@ -22,6 +26,14 @@ public class ItemParticle {
     }
 
     public ItemParticle() {
+    }
+
+    public HashMap<String, Object> getColor() {
+        return color;
+    }
+
+    public void setColor(HashMap<String, Object> color) {
+        this.color = color;
     }
 
     public Double getOffset() {

@@ -1,5 +1,7 @@
 package xyz.gamars.objects;
 
+import xyz.gamars.builders.MMOItemBuilder;
+import xyz.gamars.objects.base.NumericStat;
 import xyz.gamars.parser.MMOItemParser;
 
 import java.io.File;
@@ -1059,7 +1061,7 @@ public class MMOItems {
     public static MMOItem MANGO;
     public static MMOItem ROGUES_GAMBIT;
 
-    private static HashMap<String, MMOItem> items = new HashMap<>();
+    public static HashMap<String, MMOItem> items = new HashMap<>();
 
     private static void parseItems() {
         File[] files = new File("mmoitem").listFiles();
@@ -1067,6 +1069,13 @@ public class MMOItems {
             MMOItemParser mmoItemParser = new MMOItemParser(file.getPath());
             items.putAll(mmoItemParser.parseItems());
         }
+
+        /*
+        File files = new File("mmoitem/spear.yml");
+
+        MMOItemParser mmoItemParser = new MMOItemParser(files.getPath());
+        items.putAll(mmoItemParser.parseItems());
+        */
     }
 
      public static void registerItems() {

@@ -1,5 +1,6 @@
 package xyz.gamars.snakeyaml;
 
+import org.yaml.snakeyaml.introspector.PropertySubstitute;
 import org.yaml.snakeyaml.nodes.Tag;
 
 public class QuietTypeDescription extends org.yaml.snakeyaml.TypeDescription {
@@ -28,5 +29,10 @@ public class QuietTypeDescription extends org.yaml.snakeyaml.TypeDescription {
     @Override
     public void substituteProperty(String pName, Class<?> pType, String getter, String setter, Class<?>... argParams) {
         substituteProperty(new QuietPropertySubstitute(pName, pType, getter, setter, argParams));
+    }
+
+    @Override
+    public void substituteProperty(PropertySubstitute substitute) {
+        super.substituteProperty(substitute);
     }
 }

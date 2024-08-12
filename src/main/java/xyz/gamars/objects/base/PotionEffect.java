@@ -10,11 +10,11 @@ public class PotionEffect {
         this.duration = duration;
     }
 
-    public PotionEffect() {
-    }
-
     public PotionEffect(Double amplifier) {
         this.amplifier = amplifier;
+    }
+
+    public PotionEffect() {
     }
 
     public NumericStat getDuration() {

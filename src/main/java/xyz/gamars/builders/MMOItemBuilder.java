@@ -698,7 +698,7 @@ public final class MMOItemBuilder {
         mMOItem.setEnchants(enchants);
         mMOItem.setHideEnchants(hideEnchants);
         mMOItem.setPermission(permission);
-        mMOItem.setItemParticle(itemParticle);
+        mMOItem.setItemParticles(itemParticle);
         mMOItem.setDisableInteraction(disableInteraction);
         mMOItem.setDisableCrafting(disableCrafting);
         mMOItem.setDisableSmelting(disableSmelting);

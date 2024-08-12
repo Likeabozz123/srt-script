@@ -14,6 +14,13 @@ public class CraftingRecipe {
     private ArrayList<SmeltingRecipe> smokerRecipes;
     private ArrayList<SmeltingRecipe> campfireRecipes;
 
+    private HashMap<String, HashMap<String, Object>> shapedRecipeMap;
+    private HashMap<String, HashMap<String, Object>> shapelessRecipeMap;
+    private HashMap<String, HashMap<String, Object>> furnaceRecipeMap;
+    private HashMap<String, HashMap<String, Object>> blastRecipeMap;
+    private HashMap<String, HashMap<String, Object>> smokerRecipeMap;
+    private HashMap<String, HashMap<String, Object>> campfireRecipeMap;
+
     public CraftingRecipe(ArrayList<ShapelessRecipe> shapelessRecipe, ArrayList<ShapedRecipe> shapedRecipes, ArrayList<SmeltingRecipe> furnaceRecipes, ArrayList<SmeltingRecipe> blastRecipes, ArrayList<SmeltingRecipe> smokerRecipes, ArrayList<SmeltingRecipe> campfireRecipes) {
         this.shapelessRecipe = shapelessRecipe;
         this.shapedRecipes = shapedRecipes;
@@ -30,6 +37,17 @@ public class CraftingRecipe {
         this.blastRecipes = new ArrayList<>();
         this.smokerRecipes = new ArrayList<>();
         this.campfireRecipes = new ArrayList<>();
+
+        this.shapedRecipeMap = new HashMap<>();
+        this.shapelessRecipeMap = new HashMap<>();
+        this.furnaceRecipeMap = new HashMap<>();
+        this.blastRecipeMap = new HashMap<>();
+        this.smokerRecipeMap = new HashMap<>();
+        this.campfireRecipeMap = new HashMap<>();
+    }
+
+    public boolean isEmpty() {
+        return shapedRecipes.isEmpty() && shapelessRecipe.isEmpty() && furnaceRecipes.isEmpty() && blastRecipes.isEmpty() && smokerRecipes.isEmpty() && campfireRecipes.isEmpty();
     }
 
     public ArrayList<ShapelessRecipe> getShapelessRecipe() {
@@ -48,11 +66,12 @@ public class CraftingRecipe {
         this.shapedRecipes = shapedRecipes;
     }
 
-    public void setShapedRecipeMap(HashMap<String, HashMap<String, ArrayList<String>>> map) {
+    public void setShapedRecipeMap(HashMap<String, HashMap<String, Object>> map) {
 
         map.forEach((key, input) -> {
             ArrayList<CraftingItem> craftingItems = new ArrayList<>();
-            input.get("input").forEach(row -> {
+            ArrayList<String> inputList = (ArrayList<String>) input.get("input");
+            inputList.forEach(row -> {
                 row = row.toLowerCase();
                 String firstItemString = row.substring(0, row.indexOf('|'));
                 row = row.substring(row.indexOf('|') + 1);
@@ -66,42 +85,74 @@ public class CraftingRecipe {
             });
             shapedRecipes.add(new ShapedRecipe(craftingItems));
         });
+
+        this.shapedRecipeMap = map;
     }
 
-    public void setShapelessRecipeMap(HashMap<String, HashMap<String, ArrayList<String>>> map) {
+    public HashMap<String, HashMap<String, Object>> getShapedRecipeMap() {
+        return shapedRecipeMap;
+    }
+
+    public void setShapelessRecipeMap(HashMap<String, HashMap<String, Object>> map) {
 
         map.forEach((key, input) -> {
             ArrayList<CraftingItem> craftingItems = new ArrayList<>();
-            input.get("input").forEach(item -> {
+            ArrayList<String> inputList = (ArrayList<String>) input.get("input");
+            inputList.forEach(item -> {
                 item = item.toLowerCase();
                 craftingItems.add(readItemString(item));
             });
             shapelessRecipe.add(new ShapelessRecipe(craftingItems));
         });
+        this.shapelessRecipeMap = map;
+    }
+
+    public HashMap<String, HashMap<String, Object>> getShapelessRecipeMap() {
+        return shapelessRecipeMap;
     }
 
     public void setFurnaceRecipeMap(HashMap<String, HashMap<String, Object>> map) {
         map.forEach((key, input) -> {
             furnaceRecipes.add(new SmeltingRecipe(readItemString((String) input.get("item")), (Integer) input.get("time"), (Double) input.get("experience")));
         });
+        this.furnaceRecipeMap = map;
+    }
+
+    public HashMap<String, HashMap<String, Object>> getFurnaceRecipeMap() {
+        return furnaceRecipeMap;
     }
 
     public void setBlastRecipeMap(HashMap<String, HashMap<String, Object>> map) {
         map.forEach((key, input) -> {
             blastRecipes.add(new SmeltingRecipe(readItemString((String) input.get("item")), (Integer) input.get("time"), (Double) input.get("experience")));
         });
+        this.blastRecipeMap = map;
+    }
+
+    public HashMap<String, HashMap<String, Object>> getBlastRecipeMap() {
+        return blastRecipeMap;
     }
 
     public void setSmokerRecipeMap(HashMap<String, HashMap<String, Object>> map) {
         map.forEach((key, input) -> {
             smokerRecipes.add(new SmeltingRecipe(readItemString((String) input.get("item")), (Integer) input.get("time"), (Double) input.get("experience")));
         });
+        this.smokerRecipeMap = map;
+    }
+
+    public HashMap<String, HashMap<String, Object>> getSmokerRecipeMap() {
+        return smokerRecipeMap;
     }
 
     public void setCampfireRecipeMap(HashMap<String, HashMap<String, Object>> map) {
         map.forEach((key, input) -> {
             campfireRecipes.add(new SmeltingRecipe(readItemString((String) input.get("item")), (Integer) input.get("time"), (Double) input.get("experience")));
         });
+        this.campfireRecipeMap = map;
+    }
+
+    public HashMap<String, HashMap<String, Object>> getCampfireRecipeMap() {
+        return campfireRecipeMap;
     }
 
     public ArrayList<SmeltingRecipe> getFurnaceRecipes() {

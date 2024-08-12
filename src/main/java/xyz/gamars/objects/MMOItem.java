@@ -2,6 +2,7 @@ package xyz.gamars.objects;
 
 import xyz.gamars.crafting.CraftingRecipe;
 import xyz.gamars.objects.base.*;
+import xyz.gamars.snakeyaml.CleanRepresenter;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -15,20 +16,34 @@ public class MMOItem {
     private NumericStat maxDurability;
     private Boolean willBreak;
     private String name;
+    private HashMap<String, HashMap<String, String>> skullTexture;
+    private String gemColor;
+    private String gemUpgradeScaling;
+    private ArrayList<String> itemTypeRestriction;
     private ArrayList<String> lore;
     private String loreFormat;
     private String displayedType;
     private HashMap<String, Double> enchants;
     private Boolean hideEnchants;
     private String permission;
-    private ItemParticle itemParticle;
+    private ItemParticle itemParticles;
     private Boolean disableInteraction;
     private Boolean disableCrafting;
     private Boolean disableSmelting;
     private Boolean disableSmithing;
+    private Boolean disableAdvancedEnchants;
     private Boolean disableEnchanting;
     private Boolean disableRepairing;
     private Boolean disableAttackPassive;
+    private Boolean disableDeathDrop;
+    private Boolean disableDropping;
+    private Boolean durabilityBar;
+    private Double customScrap;
+    private String dyeColor;
+    private Boolean hideDye;
+    private Boolean hideArmorTrim;
+    private String trimMaterial;
+    private String trimPattern;
     private ArrayList<String> requiredClass;
     private NumericStat successRate;
     private NumericStat attackDamage;
@@ -37,6 +52,9 @@ public class MMOItem {
     private NumericStat criticalStrikePower;
     private NumericStat blockPower;
     private NumericStat blockRating;
+    private Boolean breakDowngrade;
+    private Boolean deathDowngrade;
+    private Boolean deathDowngradeChance;
     private NumericStat blockCooldownReduction;
     private NumericStat dodgeRating;
     private NumericStat dodgeCooldownReduction;
@@ -53,6 +71,7 @@ public class MMOItem {
     private NumericStat magicDamage;
     private NumericStat physicalDamage;
     private NumericStat defense;
+    private NumericStat lifesteal;
     private NumericStat damageReduction;
     private NumericStat fallDamageReduction;
     private NumericStat projectileDamageReduction;
@@ -124,125 +143,168 @@ public class MMOItem {
     private Double arrowVelocity;
     private PotionEffect arrowPotionEffects;
 
-    public MMOItem() {
+    private HashMap<String, Object> additionalInfo;
 
+    public MMOItem() {
+        this.additionalInfo = new HashMap<>();
     }
 
-    @Override
-    public String toString() {
-        return "MMOItem{" +
-                "id='" + id + '\'' +
-                ", material='" + material + '\'' +
-                ", durability=" + durability +
-                ", customModelData=" + customModelData +
-                ", maxDurability=" + maxDurability +
-                ", willBreak=" + willBreak +
-                ", name='" + name + '\'' +
-                ", lore=" + lore +
-                ", loreFormat='" + loreFormat + '\'' +
-                ", displayedType='" + displayedType + '\'' +
-                ", enchants=" + enchants +
-                ", hideEnchants=" + hideEnchants +
-                ", permission='" + permission + '\'' +
-                ", itemParticle=" + itemParticle +
-                ", disableInteraction=" + disableInteraction +
-                ", disableCrafting=" + disableCrafting +
-                ", disableSmelting=" + disableSmelting +
-                ", disableSmithing=" + disableSmithing +
-                ", disableEnchanting=" + disableEnchanting +
-                ", disableRepairing=" + disableRepairing +
-                ", disableAttackPassive=" + disableAttackPassive +
-                ", requiredClass=" + requiredClass +
-                ", successRate=" + successRate +
-                ", attackDamage=" + attackDamage +
-                ", attackSpeed=" + attackSpeed +
-                ", criticalStrikeChance=" + criticalStrikeChance +
-                ", criticalStrikePower=" + criticalStrikePower +
-                ", blockPower=" + blockPower +
-                ", blockRating=" + blockRating +
-                ", blockCooldownReduction=" + blockCooldownReduction +
-                ", dodgeRating=" + dodgeRating +
-                ", dodgeCooldownReduction=" + dodgeCooldownReduction +
-                ", parryRating=" + parryRating +
-                ", parryCooldownReduction=" + parryCooldownReduction +
-                ", cooldownReduction=" + cooldownReduction +
-                ", manaCost=" + manaCost +
-                ", staminaCost=" + staminaCost +
-                ", pveDamage=" + pveDamage +
-                ", pvpDamage=" + pvpDamage +
-                ", weaponDamage=" + weaponDamage +
-                ", skillDamage=" + skillDamage +
-                ", projectileDamage=" + projectileDamage +
-                ", magicDamage=" + magicDamage +
-                ", physicalDamage=" + physicalDamage +
-                ", defense=" + defense +
-                ", damageReduction=" + damageReduction +
-                ", fallDamageReduction=" + fallDamageReduction +
-                ", projectileDamageReduction=" + projectileDamageReduction +
-                ", physicalDamageReduction=" + physicalDamageReduction +
-                ", fireDamageReduction=" + fireDamageReduction +
-                ", magicDamageReduction=" + magicDamageReduction +
-                ", pveDamageReduction=" + pveDamageReduction +
-                ", pvpDamageReduction=" + pvpDamageReduction +
-                ", undeadDamage=" + undeadDamage +
-                ", unbreakable=" + unbreakable +
-                ", tier='" + tier + '\'' +
-                ", set='" + set + '\'' +
-                ", armor=" + armor +
-                ", armorToughness=" + armorToughness +
-                ", maxHealth=" + maxHealth +
-                ", unstackable=" + unstackable +
-                ", maxMana=" + maxMana +
-                ", knockbackResistance=" + knockbackResistance +
-                ", movementSpeed=" + movementSpeed +
-                ", twoHanded=" + twoHanded +
-                ", equipPriority=" + equipPriority +
-                ", permEffects=" + permEffects +
-                ", grantedPermissions=" + grantedPermissions +
-                ", itemCooldown=" + itemCooldown +
-                ", crafting=" + crafting +
-                ", craftPermission='" + craftPermission + '\'' +
-                ", craftedAmount=" + craftedAmount +
-                ", sounds=" + sounds +
-                ", element=" + element +
-                ", commands=" + commands +
-                ", gemSockets=" + gemSockets +
-                ", repairType='" + repairType + '\'' +
-                ", ability=" + ability +
-                ", upgrade=" + upgrade +
-                ", healthRegeneration=" + healthRegeneration +
-                ", manaRegeneration=" + manaRegeneration +
-                ", maxStamina=" + maxStamina +
-                ", staminaRegeneration=" + staminaRegeneration +
-                ", additionalExperience=" + additionalExperience +
-                ", factionDamageEnemy=" + factionDamageEnemy +
-                ", requiredLevel=" + requiredLevel +
-                ", requiredDexterity=" + requiredDexterity +
-                ", requiredStrength=" + requiredStrength +
-                ", professionEnchanting=" + professionEnchanting +
-                ", professionSmithing=" + professionSmithing +
-                ", professionMining=" + professionMining +
-                ", disableRightClickConsume=" + disableRightClickConsume +
-                ", restoreHealth=" + restoreHealth +
-                ", restoreFood=" + restoreFood +
-                ", restoreSaturation=" + restoreSaturation +
-                ", restoreMana=" + restoreMana +
-                ", restoreStamina=" + restoreStamina +
-                ", canIdentify=" + canIdentify +
-                ", canDeconstruct=" + canDeconstruct +
-                ", canDeskin=" + canDeskin +
-                ", effects=" + effects +
-                ", soulbindingChance=" + soulbindingChance +
-                ", souldboundBreakChance=" + souldboundBreakChance +
-                ", soulboundLevel=" + soulboundLevel +
-                ", vanillaEating=" + vanillaEating +
-                ", inedible=" + inedible +
-                ", maxConsume=" + maxConsume +
-                ", repair=" + repair +
-                ", arrowParticles=" + arrowParticles +
-                ", arrowVelocity=" + arrowVelocity +
-                ", arrowPotionEffects=" + arrowPotionEffects +
-                '}';
+    public HashMap<String, HashMap<String, String>> getSkullTexture() {
+        return skullTexture;
+    }
+
+    public void setSkullTexture(HashMap<String, HashMap<String, String>> skullTexture) {
+        this.skullTexture = skullTexture;
+    }
+
+    public Boolean getDisableDropping() {
+        return disableDropping;
+    }
+
+    public void setDisableDropping(Boolean disableDropping) {
+        this.disableDropping = disableDropping;
+    }
+
+    public Boolean getBreakDowngrade() {
+        return breakDowngrade;
+    }
+
+    public void setBreakDowngrade(Boolean breakDowngrade) {
+        this.breakDowngrade = breakDowngrade;
+    }
+
+    public Boolean getDeathDowngrade() {
+        return deathDowngrade;
+    }
+
+    public void setDeathDowngrade(Boolean deathDowngrade) {
+        this.deathDowngrade = deathDowngrade;
+    }
+
+    public Boolean getDeathDowngradeChance() {
+        return deathDowngradeChance;
+    }
+
+    public void setDeathDowngradeChance(Boolean deathDowngradeChance) {
+        this.deathDowngradeChance = deathDowngradeChance;
+    }
+
+
+    public void addAdditionalInfo(String key, Object object) {
+        CleanRepresenter.order.add(key);
+        additionalInfo.put(key, object);
+    }
+
+    public HashMap<String, Object> getAdditionalInfo() {
+        return additionalInfo;
+    }
+
+    public void setAdditionalInfo(HashMap<String, Object> additionalInfo) {
+        this.additionalInfo = additionalInfo;
+    }
+
+    public NumericStat getLifesteal() {
+        return lifesteal;
+    }
+
+    public void setLifesteal(NumericStat lifesteal) {
+        this.lifesteal = lifesteal;
+    }
+
+    public Double getCustomScrap() {
+        return customScrap;
+    }
+
+    public void setCustomScrap(Double customScrap) {
+        this.customScrap = customScrap;
+    }
+
+    public Boolean getDurabilityBar() {
+        return durabilityBar;
+    }
+
+    public void setDurabilityBar(Boolean durabilityBar) {
+        this.durabilityBar = durabilityBar;
+    }
+
+    public Boolean getDisableDeathDrop() {
+        return disableDeathDrop;
+    }
+
+    public void setDisableDeathDrop(Boolean disableDeathDrop) {
+        this.disableDeathDrop = disableDeathDrop;
+    }
+
+    public Boolean getDisableAdvancedEnchants() {
+        return disableAdvancedEnchants;
+    }
+
+    public void setDisableAdvancedEnchants(Boolean disableAdvancedEnchants) {
+        this.disableAdvancedEnchants = disableAdvancedEnchants;
+    }
+
+    public Boolean getHideArmorTrim() {
+        return hideArmorTrim;
+    }
+
+    public void setHideArmorTrim(Boolean hideArmorTrim) {
+        this.hideArmorTrim = hideArmorTrim;
+    }
+
+    public String getTrimMaterial() {
+        return trimMaterial;
+    }
+
+    public void setTrimMaterial(String trimMaterial) {
+        this.trimMaterial = trimMaterial;
+    }
+
+    public String getTrimPattern() {
+        return trimPattern;
+    }
+
+    public void setTrimPattern(String trimPattern) {
+        this.trimPattern = trimPattern;
+    }
+
+    public String getDyeColor() {
+        return dyeColor;
+    }
+
+    public void setDyeColor(String dyeColor) {
+        this.dyeColor = dyeColor;
+    }
+
+    public Boolean getHideDye() {
+        return hideDye;
+    }
+
+    public void setHideDye(Boolean hideDye) {
+        this.hideDye = hideDye;
+    }
+
+    public ArrayList<String> getItemTypeRestriction() {
+        return itemTypeRestriction;
+    }
+
+    public void setItemTypeRestriction(ArrayList<String> itemTypeRestriction) {
+        this.itemTypeRestriction = itemTypeRestriction;
+    }
+
+    public String getGemUpgradeScaling() {
+        return gemUpgradeScaling;
+    }
+
+    public void setGemUpgradeScaling(String gemUpgradeScaling) {
+        this.gemUpgradeScaling = gemUpgradeScaling;
+    }
+
+    public String getGemColor() {
+        return gemColor;
+    }
+
+    public void setGemColor(String gemColor) {
+        this.gemColor = gemColor;
     }
 
     public Boolean getDisableRightClickConsume() {
@@ -517,12 +579,12 @@ public class MMOItem {
         this.permission = permission;
     }
 
-    public ItemParticle getItemParticle() {
-        return itemParticle;
+    public ItemParticle getItemParticles() {
+        return itemParticles;
     }
 
-    public void setItemParticle(ItemParticle itemParticle) {
-        this.itemParticle = itemParticle;
+    public void setItemParticles(ItemParticle itemParticles) {
+        this.itemParticles = itemParticles;
     }
 
     public Boolean getDisableInteraction() {
