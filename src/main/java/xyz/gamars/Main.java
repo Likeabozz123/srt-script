@@ -30,10 +30,13 @@ public class Main {
 
         MMOItems.SRT_PRISMARINECHESTPLATE.addAdditionalInfo("spell-vampirism", 10D);
         MMOItems.BANANASUIT.addAdditionalInfo("goop-hat", true);
-        /*MMOItems.items.forEach((id, item) -> {
+        /*MMOItems.ITEMS.forEach((id, item) -> {
             System.out.println(mmoYaml.dump(Map.of(id, Map.of("base", item))));
         });*/
-        // System.out.println(mmoYaml.dump(Map.of(MMOItems.GINGERBREAD_HELM.getId(), Map.of("base", MMOItems.GINGERBREAD_HELM))));
+
+
+
+        System.out.println(mmoYaml.dump(Map.of(MMOItems.DARYAN_ITEM.getId(), Map.of("base", MMOItems.DARYAN_ITEM))));
 
     }
 }
